@@ -3,6 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "i18n": "npx astro-i18next generate",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
@@ -11,6 +12,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.7",
     "astro": "^5.8.0",
+    "astro-i18next": "^1.0.0-beta.21",
     "astro-navbar": "^2.3.9",
     "tailwindcss": "^4.1.7"
   }
