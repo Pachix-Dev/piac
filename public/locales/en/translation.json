@@ -1,0 +1,13 @@
+{
+    "menu": {
+        "item_1": {
+            "title": "About Us",
+            "dropdown_1": "Our History",
+            "dropdown_2": "About Us (detailed)",
+            "dropdown_3": "Areas of Expertise"
+        },
+        "item_2": "Memories",
+        "item_3": "News",
+        "item_3": "Contact"
+    }
+}
