@@ -1,0 +1,33 @@
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .custom-wrapper-class{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(10%, 1fr));
+        grid-gap: 15px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .pinterest-wrapper {
+        column-count: 4;
+        column-gap: 15px;
+        padding: 10px;
+        margin: 10px;
+    }
+  
+    .pinterest-wrapper .item {  
+    break-inside: avoid;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    }
+
+    .pinterest-wrapper .item:hover {  
+            cursor: pointer;
+
+        }

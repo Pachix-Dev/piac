@@ -2,10 +2,19 @@
 import { changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import { Gallery } from "../components/recuerdos/gallery.jsx";
+import  Gallery2  from "../components/recuerdos/ejemplo.jsx";
 
 changeLanguage("es");
 ---
 
 <Layout>
-	<Gallery />
+	<div class="px-40 py-10">
+		<div class="px-20 text-center">
+			<h1 class="text-5xl border-b-3 border-green-600 pb-3">Recuerdos</h1>
+			<p class="my-6 text-xl">Desde su fundación en 1997, el PIAC ha sido un actor imprescindible en la difusión de la cultura alemana en México. Recorra con nosotros el camino que ha quedado guardado en nuestra memoria.</p>
+		</div>
+		<div>
+			<Gallery client:load/>
+		</div>
+	</div>
 </Layout>

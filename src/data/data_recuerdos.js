@@ -2,12 +2,14 @@ export const recuerdos = [
   {
     id: 1,
     title: "12ª. Semana de Cine Alemán",
+    subtitle: "Año 2013",
     img: "/img/recuerdos/2013/12SCA.jpg",
     year: "2013",
   },
   {
     id: 2,
-    title: "Mutek 2013: Brandt Brauer Frick",
+    title: "Mutek 2013",
+    subtitle: "Brandt Brauer Frick",
     img: "/img/recuerdos/2013/Mutek2013.png",
     year: "2013",
   },
@@ -22,19 +24,20 @@ export const recuerdos = [
   {
     id: 4,
     title: "Exposición: Zur Nachanmung Empfohlen, Puebla",
+    subtitle: "Año 2013",
     img: "/img/recuerdos/2013/EjemplosASeguir.jpg",
     year: "2013",
   },
   {
     id: 5,
-    title: "Hamletmaschine. Deutsches Theater Berlin",
+    title: "Hamletmaschine. Deutsches Theater Berlin 2013",
     subtitle: "Festival Cervantino y México D.F.",
     img: "/img/recuerdos/2013/HamletMaschine.png",
     year: "2013",
   },
   {
     id: 6,
-    title: "Festival de Órgano Barroco",
+    title: "Festival de Órgano Barroco 2013",
     subtitle:
       "Catedral Metropolitana de la Ciudad de México, Heilig-Geist-Kirche y Catedral de Zamora, Michoacán",
     img: "/img/recuerdos/2013/OrganoZamora.jpg",
@@ -42,7 +45,7 @@ export const recuerdos = [
   },
   {
     id: 7,
-    title: "Umbratono ensamble",
+    title: "Umbratono ensamble 2014",
     subtitle:
       "(Sylvia Hinz, Antonio Rosales et al.), Bach y  música contemporánea",
     img: "/img/recuerdos/2014/Umbratono.png",
@@ -51,39 +54,41 @@ export const recuerdos = [
   {
     id: 8,
     title: "Mutek 2014",
+    subtitle: "Festival de música electrónica y arte audiovisual",
     img: "/img/recuerdos/2014/MUTEK2014.webp",
     year: "2014",
   },
   {
     id: 9,
-    title: "Skalenos (trío de cuerdas), Schubert/Rihm",
+    title: "Skalenos (trío de cuerdas) 2014 ",
+    subtitle: "Schubert/Rihm",
     img: "/img/recuerdos/2014/Skalenos.png",
     year: "2014",
   },
   {
     id: 10,
-    title: "Liminar",
+    title: "Liminar 2014",
     subtitle: "Neue Musik aus Deutschland (Kreidler/Kampe/Marcoll, Bernal)",
     img: "/img/recuerdos/Liminar.png",
     year: "2014",
   },
   {
     id: 11,
-    title: "Minguet Quartett ",
+    title: "Minguet Quartett 2014",
     subtitle: "Palacio de Bellas Artes, México D.F.",
     img: "/img/recuerdos/2014/Minguett.png",
     year: "2014",
   },
   {
     id: 12,
-    title: "Theaterwelt",
+    title: "Theaterwelt 2014",
     subtitle: "Teatro el Granero del Centro Cultural del Bosque",
     img: "/img/recuerdos/2014/Theaterwelt.jpg",
     year: "2014",
   },
   {
     id: 13,
-    title: "Liminar: Lachenmann/Bach",
+    title: "Liminar 2014: Lachenmann/Bach",
     subtitle: "3 tríos (Lachenmann: temA, Streichtrio, Trio Fluido)",
     img: "/img/recuerdos/Liminar.png",
     year: "2014",
@@ -91,19 +96,20 @@ export const recuerdos = [
   {
     id: 14,
     title: "13ª. Semana de Cine Alemán",
+    subtitle: "Año 2014",
     img: "/img/recuerdos/2014/SCA2014.png",
     year: "2014",
   },
   {
     id: 15,
-    title: "FAUSTO de Fr.W. Murnau",
+    title: "FAUSTO de Fr.W. Murnau 2014",
     subtitle: "Musica en Vivo Thomas Köner - Teatro de la Ciudad, México D.F",
     img: "/img/recuerdos/2014/ThomasKoner.png",
     year: "2014",
   },
   {
     id: 16,
-    title: "El polvo de los antepasados",
+    title: "El polvo de los antepasados 2014",
     subtitle: "Exposición: Museo de Arte Popular",
     img: "/img/recuerdos/2014/PolvodelosAntepasados.png",
     year: "2014",
@@ -118,63 +124,72 @@ export const recuerdos = [
   {
     id: 18,
     title: "Mutek 2015",
+    subtitle: "Festival de música electrónica y arte audiovisual",
     img: "/img/recuerdos/2015/TonalaAtonal.jpg",
     year: "2015",
   },
   {
     id: 19,
     title: "14ª Semana de Cine Alemán",
+    subtitle: "Año 2015",
     img: "/img/recuerdos/2015/SCA2015.png",
     year: "2015",
   },
   {
     id: 20,
     title: "Noche Electrónica Alemana Mexicana 2015",
+    subtitle: "Evento gratuito en su 7a edición",
     img: "/img/recuerdos/2015/MusicaElectronica2015.png",
     year: "2015",
   },
   {
     id: 21,
-    title: "Built To Last",
+    title: "Built To Last 2015",
     subtitle: "Meg Stuart & Damaged Goods",
     img: "/img/recuerdos/2015/BuiltToLast.png",
     year: "2015",
   },
   {
     id: 22,
-    title: "Conciertos 80",
+    title: "Conciertos 80 (2015)",
     subtitle: "Meg Stuart & Damaged Goods",
     img: "/img/recuerdos/Liminar.png",
     year: "2015",
   },
   {
     id: 23,
-    title: "Berliner Philharmoniker",
+    title: "Berliner Philharmoniker 2016",
     subtitle: "Digital Concert Hall",
     img: "/img/recuerdos/2016/Berliner2016.png",
     year: "2016",
   },
   {
     id: 24,
-    title: "Fashion Film festival",
+    title: "Fashion Film festival 2016",
+    subtitle:
+      "MFFF es el primer festival de cine, moda y artes visuales de México",
     img: "/img/recuerdos/2016/Fashion2016.png",
     year: "2016",
   },
   {
     id: 25,
-    title: "Gute Aussichten",
+    title: "Gute Aussichten 2016",
+    subtitle: "Concurso de estudiantes alemanes de fotografía",
     img: "/img/recuerdos/2016/GutteAusischten.png",
     year: "2016",
   },
   {
     id: 26,
-    title: "Elisa y Amigos Ballet",
+    title: "Elisa y Amigos Ballet 2016",
+    subtitle:
+      "La Gala Elisa y Amigos ha reunido en México a los mejores bailarines del mundo",
     img: "/img/recuerdos/2016/ElisayAmigos.png",
     year: "2016",
   },
   {
     id: 27,
     title: "15. semana de cine alemán",
+    subtitle: "Año 2016",
     img: "/img/recuerdos/2016/SCA2016-.png",
     year: "2016",
   },
@@ -187,37 +202,44 @@ export const recuerdos = [
   },
   {
     id: 29,
-    title: "Otto Dix",
+    title: "Otto Dix 2017",
+    subtitle:
+      "Primera gran retrospectiva de uno de los artistas más importantes de Alemania del siglo XX",
     img: "/img/recuerdos/2017/OttoDix.jpg",
     year: "2017",
   },
   {
     id: 30,
-    title: "Mexibility",
+    title: "Mexibility 2017",
+    subtitle: "Una reflexión sobre la CDMX y su movilidad",
     img: "/img/recuerdos/2017/Mexibility.jpg",
     year: "2017",
   },
   {
     id: 31,
-    title: "Festival del Organo Barroco",
+    title: "Festival del Organo Barroco 2017",
+    subtitle:
+      "Promoción a nivel nacional e internacional de la importancia del estudio, revaloración y conservación del patrimonio de órganos históricos mexicanos.",
     img: "/img/recuerdos/2017/OrganoBarroco2017.png",
     year: "2017",
   },
   {
     id: 32,
     title: "16. semana de cine alemán ",
+    subtitle: "Año 2017",
     img: "/img/recuerdos/2017/SCA2017.png",
     year: "2017",
   },
   {
     id: 33,
     title: "17. semana de cine alemán ",
+    subtitle: "Año 2018",
     img: "/img/recuerdos/2018/SCA2018.png",
     year: "2018",
   },
   {
     id: 34,
-    title: "Cervantino: HAMLET",
+    title: "Cervantino: HAMLET 2019",
     subtitle:
       "A cargo del director Thomas Ostermeier en el Auditorio de Guanajuato",
     img: "/img/recuerdos/2019/Ostermeier.jpg",
@@ -225,7 +247,7 @@ export const recuerdos = [
   },
   {
     id: 35,
-    title: "Berlin Salvaje",
+    title: "Berlin Salvaje 2019",
     subtitle: "Ciclo de Cine",
     img: "/img/recuerdos/2019/BerlinSalvage.jpg",
     year: "2019",
@@ -233,18 +255,22 @@ export const recuerdos = [
   {
     id: 36,
     title: "Hertz Flimmern 2019",
+    subtitle:
+      "Hertzflimmern genera diálogos a través de la música y forma motores de reflexión en torno a la cultura contemporánea y su impacto en la vida",
     img: "/img/recuerdos/2019/HertzFlimmern2019.png",
     year: "2019",
   },
   {
     id: 37,
     title: "18. semana de cine alemán",
+    subtitle: "Año 2019",
     img: "/img/recuerdos/2019/SCA2019.jpg",
     year: "2019",
   },
   {
     id: 38,
     title: "19. semana de cine alemán",
+    subtitle: "Año 2020",
     img: "/img/recuerdos/2020/SCA2020.jpg",
     year: "2020",
   },
@@ -274,7 +300,8 @@ export const recuerdos = [
   },
   {
     id: 42,
-    title: "El PIAC apoya la edición 2020-2021 de CAMPUS LATINO",
+    title: "CAMPUS LATINO 2021",
+    subtitle: "El PIAC apoya la edición 2020-2021 de CAMPUS LATINO",
     img: "/img/recuerdos/2021/CampusLatino.jpg",
     year: "2021",
   },
@@ -289,99 +316,132 @@ export const recuerdos = [
   {
     id: 44,
     title: "21. Semana de Cine Alemán",
+    subtitle: "Año 2022",
     img: "/img/recuerdos/2022/SCA2022.jpg",
     year: "2022",
   },
   {
     id: 45,
     title: "Alemania, México y música = Covers_DEMX",
+    subtitle:
+      "Berlín le canta con amor a la Ciudad de México con covers de las canciones favoritas de la CDMX para conmemorar los 500 años de Resistencia Indígena",
     img: "/img/recuerdos/2022/Cover-DEMX-.jpg",
     year: "2022",
   },
   {
     id: 46,
-    title: "PIAC patrocinador del VII TAXCO FILM FEST",
+    title: "VII TAXCO FILM FEST 2022",
+    subtitle: "PIAC patrocinador del VII TAXCO FILM FEST",
     img: "/img/recuerdos/2022/VIITaxcoFilmFest.jpg",
     year: "2022",
   },
   {
     id: 47,
-    title:
+    title: "Franz Mayer 2022",
+    subtitle:
       "El PIAC patrocina la exposición de La fotografía a través de la mirada de Franz Mayer",
     img: "/img/recuerdos/2022/FranzMayer.jpg",
     year: "2022",
   },
   {
     id: 48,
-    title:
+    title: "La excursión de las niñas muertas 2022",
+    subtitle:
       "PIAC, es orgulloso patrocinador de la puesta en escena de la obra “La excursión de las niñas muertas”",
     img: "/img/recuerdos/2022/excursion-ninas-muertas.jpg",
     year: "2022",
   },
   {
     id: 49,
-    title: "Museo Franz Mayer. sala de pintura y grabado",
+    title: "Museo Franz Mayer 2022",
+    subtitle: "Sala de pintura y grabado",
     img: "/img/recuerdos/2022/MuseoFranzMayer.jpg",
     year: "2022",
   },
   {
     id: 50,
     title: "25 aniversario del PIAC",
+    subtitle:
+      "Robert Aust - Recital de Piano en el marco del 25 aniversario del PIAC",
     img: "/img/recuerdos/2022/PIAC25.jpg",
     year: "2022",
   },
   {
     id: 51,
-    title: "Folio de la Exposición de Amarantus",
+    title: "Folio de la Exposición de Amarantus 2022",
+    subtitle:
+      "El libro de Mariana Castillo Deball, editado por el MUAC como producto de la exposición de la artista,",
     img: "/img/recuerdos/2022/ExposiciónAmarantus.jpg",
     year: "2022",
   },
   {
     id: 52,
-    title: "Lucian Plessner",
+    title: "Lucian Plessner 2023",
+    subtitle:
+      "El guitarrista alemán Lucian Plessner cautivó con obras de compositores judío-mexicanos",
     img: "/img/recuerdos/2023/LucianPlessner.jpeg",
     year: "2023",
   },
   {
     id: 53,
-    title: "Tanz des Nosferatus",
+    title: "Tanz des Nosferatus 2023",
+    subtitle:
+      "Proyección en pantalla grande de la primera película de vampirxs de la historia del cine, ",
     img: "/img/recuerdos/2023/TanzDesNosferatus.jpg",
     year: "2023",
   },
   {
     id: 54,
-    title: "El Salvaje",
+    title: "El Salvaje 2023",
+    subtitle:
+      "El dramaturgo y director David Gaitán presenta su versión de la novela El salvaje,",
     img: "/img/recuerdos/2023/ElSalvaje.jpg",
     year: "2023",
   },
   {
     id: 55,
-    title: "Hertz Flimmern",
+    title: "Hertz Flimmern 2023",
+    subtitle:
+      "Hertzflimmern es una serie de eventos organizados por el Goethe-Institut Mexiko en donde se presentan las escenas electrónicas tanto de Alemania como de México, Centroamérica y el Caribe.",
     img: "/img/recuerdos/2023/Hertz-Flimmern.jpg",
     year: "2023",
   },
   {
     id: 56,
-    title: "La Excursión de las niñas muertas",
+    title: "La Excursión de las niñas muertas 2024",
+    subtitle: "Un proyecto de Netty Radvanyi y Micaela Gramajo",
     img: "/img/recuerdos/2024/LaExcursionNinasMuertas.jpg",
     year: "2024",
   },
   {
     id: 57,
     title: "Liber Festival 2024",
+    subtitle:
+      "El foco principal de esta edición es el largamente esperado estreno en México de Parsifal de Wagner.",
     img: "/img/recuerdos/2024/LiberFestival.jpg",
     year: "2024",
   },
   {
     id: 58,
     title: "Inauguración 23 FCA Festival de Cine Alemán",
+    subtitle: "Año 2024",
     img: "/img/recuerdos/2024/23FCA.png",
     year: "2024",
   },
   {
     id: 59,
-    title: "EXT x VNION + BOCA BOCA",
+    title: "EXT x VNION + BOCA BOCA 2024",
+    subtitle:
+      "En alianza con el Goethe-Institut, presentan una experiencia única en la CDMX:",
     img: "/img/recuerdos/2024/EXT-x-VNION-BOCA-BOCA.jpg",
+    year: "2024",
+  },
+  {
+    id: 60,
+    title: "La naturaleza íntima de Ernst Saemisch 2024",
+    subtitle:
+      "PIAC te invita a sumergirte en la obra de Ernst Saemisch (1902-1984)",
+    img: "/img/recuerdos/2024/naturaleza-piac-scaled.jpg",
     year: "2024",
   },
 ];

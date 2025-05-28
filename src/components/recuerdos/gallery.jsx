@@ -15,7 +15,7 @@ import lgZoom from 'lightgallery/plugins/zoom';
 
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { recuerdos } from "../../data/data_recuerdos";
-
+import './gallery.css'
 export function Gallery() {
     const onBeforeSlide = (detail) => {
         const { index, prevIndex } = detail;
@@ -28,7 +28,7 @@ export function Gallery() {
             src: item.img,
             thumb: item.img,
             subHtml: `<div class="lightGallery-captions">
-                <h4>${item.title}</h4>
+                <h3>${item.title}</h3>
                 <p>${item.subtitle}</p>
             </div>`,
         };
@@ -38,12 +38,12 @@ export function Gallery() {
           return (
             <a
               key={item.id}
-              className="gallery-item"
+              className="item"
               data-src={item.src}
+              data-sub-html={item.subHtml}
             >
               <img
-                style={{ maxWidth: '280px' }}
-                className="img-responsive"
+                className="h-full w-full object-cover rounded-lg"
                 src={item.thumb}
               />
             </a>
@@ -54,14 +54,17 @@ export function Gallery() {
 
     return (
         <div className="App">
-            <LightGallery
-                plugins={[lgThumbnail, lgZoom]}
-                speed={500}
-                elementClassNames="custom-wrapper-class"
-                onBeforeSlide={onBeforeSlide}
-            >
-                {getItems()}
-            </LightGallery>
+            
+                <LightGallery
+                    plugins={[lgThumbnail, lgZoom]}
+                    speed={50}
+                    elementClassNames="pinterest-wrapper"
+                    onBeforeSlide={onBeforeSlide}
+                >
+                    
+                        {getItems()}
+                </LightGallery>
+           
         </div>
     );
 }

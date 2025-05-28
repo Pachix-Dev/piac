@@ -18,9 +18,11 @@
     "astro": "^5.8.0",
     "astro-i18next": "^1.0.0-beta.21",
     "astro-navbar": "^2.3.9",
+    "flickr-justified-gallery": "^2.2.0",
     "lightgallery": "^2.8.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-photo-album": "^3.1.0",
     "tailwindcss": "^4.1.7"
   },
   "devDependencies": {
