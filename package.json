@@ -10,10 +10,20 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/node": "^9.2.2",
+    "@astrojs/react": "^4.3.0",
     "@tailwindcss/vite": "^4.1.7",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
     "astro": "^5.8.0",
     "astro-i18next": "^1.0.0-beta.21",
     "astro-navbar": "^2.3.9",
+    "lightgallery": "^2.8.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "tailwindcss": "^4.1.7"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.89.0"
   }
 }
