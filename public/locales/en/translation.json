@@ -7,21 +7,22 @@
         "name": "Name",
         "topic": "Topic",
         "about": "About",
-        "send": "Send",
-        "menu": {
-            "item_1": {
-                "title": "About Us",
-                "dropdown_1": "Our History",
-                "dropdown_2": "About Us (detailed)",
-                "dropdown_3": "Areas of Expertise"
-            },
-            "item_2": "Memories",
-            "item_3": "News",
-            "item_3": "Contact"
+        "send": "Send"
+    },
+    "menu": {
+        "item_1": {
+            "title": "About Us",
+            "dropdown_1": "Our History",
+            "dropdown_2": "About Us (detailed)",
+            "dropdown_3": "Areas of Expertise"
         },
-        "home": {
-            "title_1": "Germany ",
-            "title_2": "in México",
-            "description": "The most important private initiative for the dissemination of German culture in Mexico"
-        }
+        "item_2": "Memories",
+        "item_3": "News",
+        "item_4": "Contact"
+    },
+    "home": {
+        "title_1": "Germany ",
+        "title_2": "in México",
+        "description": "The most important private initiative for the dissemination of German culture in Mexico"
     }
+}
