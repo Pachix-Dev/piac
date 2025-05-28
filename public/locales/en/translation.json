@@ -9,5 +9,10 @@
         "item_2": "Memories",
         "item_3": "News",
         "item_3": "Contact"
+    },
+    "home": {
+        "title_1": "Germany ",
+        "title_2": "in México",
+        "description": "The most important private initiative for the dissemination of German culture in Mexico"
     }
 }

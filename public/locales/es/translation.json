@@ -9,5 +9,10 @@
         "item_2": "Recuerdos",
         "item_3": "Noticias",
         "item_3": "Contacto"
+    },
+    "home": {
+        "title_1": "Alemania ",
+        "title_2": "en México",
+        "description": "La iniciativa privada más importante para la difusión de la cultura Alemana en México"
     }
 }
