@@ -2,7 +2,7 @@ export const recuerdos = [
   {
     id: 1,
     title: "12ª. Semana de Cine Alemán",
-    img: "/img/recuerdos/2013/12SAC.jpg",
+    img: "/img/recuerdos/2013/12SCA.jpg",
     year: "2013",
   },
   {
@@ -261,7 +261,7 @@ export const recuerdos = [
     title: "20. semana de cine alemán",
     subtitle:
       "Cine al aire libre, en salas de cine tradicionales y en plataforma online",
-    img: "/img/recuerdos/2021/SAC2021.png",
+    img: "/img/recuerdos/2021/SCA2021.png",
     year: "2021",
   },
   {
