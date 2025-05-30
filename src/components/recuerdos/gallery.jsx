@@ -23,7 +23,6 @@ export function Gallery({currentLanguage}) {
         const { index, prevIndex } = detail;
         console.log(index, prevIndex);
     };
-    console.log(currentLanguage);
    
     const [filter, setFilter] = useState('all');
 
@@ -69,7 +68,7 @@ export function Gallery({currentLanguage}) {
 
     return (
       <div className="App">
-        <div className="flex flex-wrap justify-center gap-10 my-7 years">
+        <div className="flex flex-wrap justify-center gap-5 lg:gap-10 my-7 years">
           {/* Los estilos de los años están en el archivo gallery.css */}
           <a data-year="2013" onClick={(e) => { e.preventDefault(); setFilter('all'); }}>Todos</a>
           <a data-year="2013" onClick={(e) => { e.preventDefault(); setFilter('2013'); }}>2013</a>

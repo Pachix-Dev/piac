@@ -21,16 +21,16 @@ h3 {
 }
 
 .pinterest-wrapper .item {  
-break-inside: avoid;
-margin-bottom: 15px;
-padding: 10px;
-border-radius: 8px;
+    break-inside: avoid;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .pinterest-wrapper .item:hover {  
-        cursor: pointer;
+    cursor: pointer;
 
-    }
+}
 
 .years a {
     background-color: white;
@@ -48,4 +48,24 @@ border-radius: 8px;
 
 .years a:hover {
     transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+    .pinterest-wrapper {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 600px) {
+    .pinterest-wrapper {
+        column-count: 2;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 376px) {
+    .pinterest-wrapper {
+        column-gap: 7px;
+    }
 }
