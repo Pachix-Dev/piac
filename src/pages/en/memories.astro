@@ -1,10 +1,10 @@
 ---
 import i18next, { t, changeLanguage } from "i18next";
-import Layout from "../layouts/Layout.astro";
-import { Gallery } from "../components/recuerdos/gallery.jsx";
-import Gallery2 from "../components/recuerdos/ejemplo.jsx";
+import Layout from "../../layouts/Layout.astro";
+import { Gallery } from "../../components/recuerdos/gallery.jsx";
+import Gallery2 from "../../components/recuerdos/ejemplo.jsx";
 
-changeLanguage("es");
+changeLanguage("en");
 
 const currentLanguage = i18next.language;
 ---
@@ -16,7 +16,7 @@ const currentLanguage = i18next.language;
 			<p class="my-6 text-xl">{t("memories.subtitle")}</p>
 		</div>
 		<div class="pt-1">
-			<Gallery client:load currentLanguage={currentLanguage} />
+			<Gallery client:load currentLanguage={currentLanguage}/>
 		</div>
 	</div>
 </Layout>

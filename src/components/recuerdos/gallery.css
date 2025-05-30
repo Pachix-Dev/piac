@@ -1,33 +1,51 @@
 
-    h3 {
-        font-size: 1.5rem;
-    }
+h3 {
+    font-size: 1.5rem;
+}
 
-    .custom-wrapper-class{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(10%, 1fr));
-        grid-gap: 15px;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .pinterest-wrapper {
-        column-count: 4;
-        column-gap: 15px;
-        padding: 10px;
-        margin: 10px;
-    }
-  
-    .pinterest-wrapper .item {  
-    break-inside: avoid;
-    margin-bottom: 15px;
+/* .custom-wrapper-class{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10%, 1fr));
+    grid-gap: 15px;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
-    border-radius: 8px;
+    margin: 10px;
+} */
+
+.pinterest-wrapper {
+    column-count: 4;
+    column-gap: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.pinterest-wrapper .item {  
+break-inside: avoid;
+margin-bottom: 15px;
+padding: 10px;
+border-radius: 8px;
+}
+
+.pinterest-wrapper .item:hover {  
+        cursor: pointer;
+
     }
 
-    .pinterest-wrapper .item:hover {  
-            cursor: pointer;
+.years a {
+    background-color: white;
+    border: 2px solid #d8d8d8;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: -1px 1px 4px 0px rgb(230, 230, 230);
+    color: black;
+    display: inline-block;
+    padding: 3px 7px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+}
 
-        }
+.years a:hover {
+    transform: scale(1.2);
+}
