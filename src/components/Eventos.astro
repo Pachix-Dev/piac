@@ -1,0 +1,11 @@
+---
+import EmblaCarousel from "./Carousel/EmblaCarousel";
+import { recuerdos } from "../data/data_recuerdos.js";
+
+const OPTIONS = { loop: true };
+const SLIDES_DATA = recuerdos;
+---
+
+<div class="bg-[#f9f7f0]">
+    <EmblaCarousel client:only="react" slides={SLIDES_DATA} options={OPTIONS} />
+</div>
