@@ -1,11 +1,15 @@
 ---
-import { changeLanguage } from "i18next";
-import Contact from "../../components/shared/Contact.astro";
+import i18next, { t, changeLanguage } from "i18next";
+import { Contact } from "../../components/shared/Contact.jsx";
 import Layout from "../../layouts/Layout.astro";
 import Inicio from "../../components/Inicio.astro";
 import AboutUs from "../../components/AboutUs.astro";
+import Eventos from "../../components/Eventos.astro";
 
 changeLanguage("en");
+
+const currentLanguage = i18next.language;
+const translates = t("contact", { returnObjects: true });
 ---
 
 <Layout>
@@ -19,6 +23,7 @@ changeLanguage("en");
 	>
 	</video>
 	<Inicio />
+	<Eventos />
 	<AboutUs />
-	<Contact />
+	<Contact client:load currentLanguage={currentLanguage} translates={translates} />
 </Layout>
