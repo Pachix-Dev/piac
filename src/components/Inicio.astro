@@ -2,19 +2,41 @@
 import i18next, { t } from "i18next";
 ---
 
-<main>
-    <div class="m-3 mb-40 p-2 pt-8 grid justify-center">
-        <div class="justify-center flex">
-            <img width="250" src="/img/icon_PIAC.webp" />
+<main
+    class="min-h-screen flex items-center justify-center py-10 px-4 sm:px-6 lg:px-8"
+>
+    <video
+        src="/video/bg-piac.mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+        class="w-full h-full object-fill fixed top-0 z-[-1]"
+    >
+    </video>
+    <div class="w-full max-w-4xl text-center">
+        <div class="flex justify-center mb-6 sm:mb-8">
+            <img
+                width="250"
+                src="/img/icon_PIAC.webp"
+                alt="PIAC Icon"
+                class="w-40 sm:w-48 md:w-56 lg:w-64 max-w-full h-auto"
+            />
         </div>
+
         <div
-            class="flex uppercase justify-center text-center text-white text-4xl"
+            class="uppercase text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-6"
         >
-            <p class="font-bold mr-2">{t("home.title_1")}</p>
-            <p>{t("home.title_2")}</p>
+            <p class="font-bold inline-block mr-2">{t("home.title_1")}</p>
+            <p class="inline-block">{t("home.title_2")}</p>
         </div>
+
         <div>
-            <p class="m-3 text-2xl text-white">{t("home.description")}</p>
+            <p
+                class="text-xl sm:text-2xl md:text-3xl text-white mx-auto max-w-3xl"
+            >
+                {t("home.description")}
+            </p>
         </div>
     </div>
 </main>

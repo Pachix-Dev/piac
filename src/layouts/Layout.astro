@@ -1,4 +1,6 @@
 ---
+import { ClientRouter } from "astro:transitions";
+
 import Footer from "../components/shared/Footer.astro";
 import Menu from "../components/shared/Menu.astro";
 import "../styles/global.css";
@@ -15,6 +17,7 @@ import "../styles/global.css";
 			PIAC | La iniciativa privada más importante para la difusión de la
 			cultura Alemana en México
 		</title>
+		<ClientRouter transition:animate="fade" />
 	</head>
 	<body>
 		<Menu />

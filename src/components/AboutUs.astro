@@ -1,39 +1,119 @@
 ---
-
+import { object } from "astro:schema";
+import ParticlesBg from "particles-bg";
+let colors = "#EC0000, #FFE221";
 ---
 
-<section class="justify-center bg-white">
-    <div
-        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8"
-    >
-        <div class="md:w-1/2 text-gray-700">
-            <h2 class="text-3xll font-extrabold text-gray-900 mb-4">
-                QUIENES SOMOS
-            </h2>
-            <p class="text-lg leading-relaxed">
-                Fundado en 1997, el Patronato de la Industria Alemana para la
-                Cultura es una Asociación Civil y donataria autorizada ante
-                SEDESOL, conformado por empresas Mexicanas de capital Alemán o
-                con otro tipo de vínculo fuerte con Alemania. Parte del éxito
-                económico de los miembros del Patronato, el cual les permite
-                generar un número significativo de empleos directos e indirectos
-                en México, se basa en valores éticos, responsabilidad social,
-                actitud sustentable, tecnologías, técnicas, productos, servicios
-                y originarios de Alemania. En México y en el mundo, la “Calidad
-                Alemana” beneficia de un gran prestigio. Conscientes de lo que
-                deben a la expresión de amistad y al reconocimiento que siempre
-                reciben de parte de los mexicanos, los miembros del Patronato
-                buscan retribuir en el contexto de su Responsabilidad Social
-                Empresarial, difundiendo y promocionando la cultura Alemana en
-                México.
-            </p>
+<section class="justify-center bg-white relative">
+    <ParticlesBg
+        client:only="react"
+        type="circle"
+        color={["#EC0000", "#FFE221", "#000000"]}
+        bg={{
+            position: "absolute",
+            zIndex: 1,
+            width: "100%",
+            height: "100%",
+            top: 0,
+            left: 0,
+        }}
+    />
+    <div class="relative z-10 p-0 md:p-5 grid justify-center">
+        <div
+            class="bg-[#fffbebd6] rounded-none md:rounded-2xl max-w-7xl mx-auto flex flex-col md:flex-row m-4 md:m-2 items-center justify-center"
+        >
+            <div class="w-full p-2 text-black md:w-1/2">
+                <div class="w-full justify-center flex">
+                    <h2
+                        class="text-center w-fit text-3xl border-b-3 border-red-500 font-extrabold text-gray-900 mb-4"
+                    >
+                        ¿QUIENES SOMOS?
+                    </h2>
+                </div>
+                <p class="text-justify text-lg leading-relaxed">
+                    Fundado en 1997, el Patronato de la Industria Alemana para
+                    la Cultura es una Asociación Civil y donataria autorizada
+                    ante SEDESOL, conformado por empresas Mexicanas de capital
+                    Alemán o con otro tipo de vínculo fuerte con Alemania.
+                </p>
+                <br />
+                <p class="text-justify text-lg leading-relaxed">
+                    Parte del éxito económico de los miembros del Patronato, el
+                    cual les permite generar un número significativo de empleos
+                    directos e indirectos en México, se basa en valores éticos,
+                    responsabilidad social, actitud sustentable, tecnologías,
+                    técnicas, productos, servicios y originarios de Alemania.
+                </p>
+                <p class="text-justify text-lg leading-relaxed">
+                    En México y en el mundo, la “Calidad Alemana” beneficia de
+                    un gran prestigio. Conscientes de lo que deben a la
+                    expresión de amistad y al reconocimiento que siempre reciben
+                    de parte de los mexicanos, los miembros del Patronato buscan
+                    retribuir en el contexto de su Responsabilidad Social
+                    Empresarial, difundiendo y promocionando la cultura Alemana
+                    en México.
+                </p>
+            </div>
+            <div class="hidden md:block">
+                <img
+                    class="w-100 h-auto object-fill"
+                    src="./img/AboutUs.png"
+                    alt="Imagen representativa de quienes somos"
+                />
+            </div>
         </div>
-        <div class="">
-            <img
-                class="w-100 h-auto object-cover"
-                src="./img/AboutUs.png"
-                alt="Imagen representativa de quienes somos"
-            />
+        <div
+            class="bg-[#fffbebd6] rounded-none md:rounded-2xl max-w-7xl mx-auto flex flex-col md:flex-row m-0 md:m-2 items-center justify-center"
+        >
+            <div class="hidden md:block">
+                <img
+                    class="w-100 h-auto object-cover"
+                    src="./img/AboutUs2.png"
+                    alt="Imagen representativa de Misión y Visión"
+                />
+            </div>
+            <div class="w-full p-2 text-black md:w-1/2">
+                <div class="w-full justify-start flex">
+                    <h2
+                        class="text-center w-fit text-3xl border-b-3 border-green-500 font-extrabold text-gray-900 mb-4"
+                    >
+                        MISIÓN Y VISIÓN
+                    </h2>
+                </div>
+                <p class="text-justify text-lg leading-relaxed">
+                    El Patronato contribuye a la fusión de la cultura Alemana y
+                    Mexicana a través de:
+                </p>
+                <br />
+                <p class="text-justify text-lg leading-relaxed">
+                    <ul class="list-disc pl-9">
+                        <li class="text-justify text-lg leading-relaxed">
+                            Realización de eventos de alto prestigio en todos
+                            los ámbitos de la cultura (artes y otros), ya sea
+                            directamente o mediante aportaciones económicas.
+                        </li>
+                        <li class="text-justify text-lg leading-relaxed">
+                            Difusión de la cultura Alemana hacia los
+                            colaboradores y clientes de los Asociados y del
+                            público en general, a través de medios electrónicos.
+                        </li>
+                        <li class="text-justify text-lg leading-relaxed">
+                            Apoyo a creadores y otros representantes destacados
+                            de la cultura en proyectos que permitan afianzar los
+                            lazos culturales entre mexicanos y alemanes.
+                        </li>
+                    </ul>
+                    <br />
+                    <p class="text-justify text-lg leading-relaxed">
+                        El Patronato ha creado alianzas con la Embajada Alemana,
+                        el Goethe Institut, el Colegio Humboldt y otras
+                        instituciones que desean apoyar la misión del Patronato,
+                        siendo este reconocido como la iniciativa privada más
+                        importante para la difusión de la cultura Alemana en
+                        México.
+                    </p>
+                </p>
+            </div>
         </div>
     </div>
 </section>
