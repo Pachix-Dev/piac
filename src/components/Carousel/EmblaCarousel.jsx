@@ -1,52 +1,38 @@
 import React, { useRef } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
-import { useAutoplayProgress } from './EmblaCarouselAutoplayProgress';
-import {
-    NextButton,
-    PrevButton,
-    usePrevNextButtons
-} from './EmblaCarouselArrowButtons';
+
 
 const EmblaCarousel = (props) => {
     const { slides, options } = props;
-    const progressNode = useRef(null);
-    const [emblaRef, emblaApi] = useEmblaCarousel(options, [
-        Autoplay({ playOnInit: true, delay: 2000, stopOnInteraction: true })
+    const [emblaRef] = useEmblaCarousel(options, [
+        Autoplay({ playOnInit: true, delay: 2000, stopOnInteraction: false })
     ]);
 
-    const {
-        prevBtnDisabled,
-        nextBtnDisabled,
-        onPrevButtonClick,
-        onNextButtonClick
-    } = usePrevNextButtons(emblaApi);
 
-    const { showAutoplayProgress } = useAutoplayProgress(emblaApi, progressNode);
 
     return (
 
-        <div className="flex w-full mx-auto relative overflow-hidden">
-            <div>
-                <PrevButton
-                    onClick={onPrevButtonClick}
-                    disabled={prevBtnDisabled}
-                    className="p-3 h-full size-15  hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
-                >
-                    <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <div className="flex mx-auto relative overflow-hidden">
 
-                    </svg>
-                </PrevButton>
-            </div>
             <div className=" overflow-hidden" ref={emblaRef}>
                 {/* Contenedor de los slides */}
-                <div className="flex touch-pan-y touch-pinch-zoom -ml-4">
+                <div className="flex md:h-96 lg:flex -ml-4">
                     {slides.map((recuerdo, index) => (
                         // Cada slide
-                        <div key={index} className=" justify-center items-center flex flex-none w-full p-4 m-5">
+                        <div key={index} className="grid grid-cols-1 gap-4 sm:flex sm:gap-0 bg-white rounded-xl justify-center items-center  h-fit flex-none w-fit p-4 m-5 ">
+
+                            < div className="flex md:hidden  justify-center " >
+                                <img
+                                    className="w-fit h-34 rounded-lg md:w-32 lg:w-24"
+                                    src={recuerdo.img}
+                                    alt={recuerdo.title}
+                                />
+                            </div>
+
                             {/* Detalles del slide */}
-                            <div className='m-5 p-3'>
-                                <div className=" m-2 p-2 flex flex-col  justify-center   ">
+                            <div className='m-1 p-1'>
+                                <div className=" m-1 p-1 flex flex-col  justify-center   ">
                                     <h3 className="font-bold text-3xl text-gray-800 mb-1">
                                         {recuerdo.title}
                                     </h3>
@@ -74,9 +60,9 @@ const EmblaCarousel = (props) => {
                             </div>
 
                             {/* Contenido de la imagen del slide */}
-                            < div className="mt-4" >
+                            < div className=" hidden md:block mt-4" >
                                 <img
-                                    className="w-full h-110 rounded-lg"
+                                    className="w-full h-auto rounded-lg md:h-64 lg:h-72"
                                     src={recuerdo.img}
                                     alt={recuerdo.title}
                                 />
@@ -85,18 +71,10 @@ const EmblaCarousel = (props) => {
                     ))}
                 </div>
             </div >
-            <div >
-                <NextButton
-                    onClick={onNextButtonClick}
-                    disabled={nextBtnDisabled}
-                    className="p-3 h-full size-15  hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
-                >
-                    <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    </svg>
-                </NextButton>
-            </div>
 
         </div >
+
+
     );
 };
 

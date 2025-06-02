@@ -6,6 +6,13 @@ const OPTIONS = { loop: true };
 const SLIDES_DATA = recuerdos;
 ---
 
-<div class="bg-[#f9f7f0]">
+<div class="bg-[#f9f7f0] p-1">
+    <div class="rounded-3xl p-4 bg-white m-5">
+        <h2
+            class="border-b-3 border-b-red-500 w-fit font-bold text-4xl text-blond"
+        >
+            Nuestros Eventos
+        </h2>
+    </div>
     <EmblaCarousel client:only="react" slides={SLIDES_DATA} options={OPTIONS} />
 </div>
