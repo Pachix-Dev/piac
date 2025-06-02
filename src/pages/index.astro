@@ -5,6 +5,7 @@ import Layout from "../layouts/Layout.astro";
 import Inicio from "../components/Inicio.astro";
 import AboutUs from "../components/AboutUs.astro";
 import Eventos from "../components/Eventos.astro";
+import Partners from "../components/Partners.astro";
 
 changeLanguage("es");
 
@@ -16,5 +17,6 @@ const translates = t("contact", { returnObjects: true });
 	<Inicio />
 	<Eventos />
 	<AboutUs />
+	<Partners />
 	<Contact client:load currentLanguage={currentLanguage} translates={translates} />
 </Layout>
