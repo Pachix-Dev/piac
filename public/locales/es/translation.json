@@ -13,12 +13,11 @@
         "item_1": {
             "title": "¿Quiénes Somos?",
             "dropdown_1": "Nuestra Historia",
-            "dropdown_2": "Nosotros (detallado)",
+            "dropdown_2": "Nosotros",
             "dropdown_3": "Áreas de Experiencia"
         },
         "item_2": "Recuerdos",
-        "item_3": "Noticias",
-        "item_4": "Contacto"
+        "item_3": "Contacto"
     },
     "home": {
         "title_1": "Alemania ",
