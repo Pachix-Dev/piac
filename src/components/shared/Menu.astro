@@ -35,6 +35,10 @@ const menu: MenuItem[] = [
     title: t("menu.item_3"),
     href: "/#contact",
   },
+  {
+    title: t("menu.item_4"),
+    href: "/news",
+  },
 ];
 ---
 
@@ -61,8 +65,8 @@ const menu: MenuItem[] = [
             <li class=" lg:border-r-2 px-15 py-3 border-black">
               {menuItem.items ? (
                 <Dropdown class="group">
-                  <button class="flex items-center uppercase">
-                    <span>{menuItem.title}</span>
+                  <button class="flex items-center py-1 uppercase">
+                    <span class="">{menuItem.title}</span>
                   </button>
                   <DropdownItems class="relative">
                     <div class="lg:absolute bg-white top-2 border shadow rounded p-2 w-max">
@@ -176,6 +180,7 @@ const menu: MenuItem[] = [
                 </Dropdown>
               ) : (
                 <a
+                  class="py-5"
                   href={
                     menuItem?.target ? menuItem.href : `${base}${menuItem.href}`
                   }

@@ -1,9 +1,8 @@
 ---
 import Marquee from "../components/Marquee.astro";
+import UltimosNews from "../components/UltimosNews.astro";
 import { news } from "../data/data_news.js";
 import i18next, { t } from "i18next";
-
-
 ---
 
 <section class="bg-[#f9f7f0] py-3">
@@ -14,5 +13,11 @@ import i18next, { t } from "i18next";
             {t("news.title")}
         </h2>
     </div>
-    <Marquee images={news} isLeftToRight={false}/>
+    <UltimosNews images={news} isLeftToRight={false} />
+    <div class="w-full flex justify-center mt-5">
+        <a
+            class="bg-[#228B22] text-white py-2 px-7 rounded-lg hover:bg-[#0A422F]"
+            href="/news">hola cara de cola</a
+        >
+    </div>
 </section>

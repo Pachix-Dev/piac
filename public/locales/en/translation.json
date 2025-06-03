@@ -17,7 +17,8 @@
             "dropdown_3": "Criteria for Action"
         },
         "item_2": "Memories",
-        "item_3": "Contact"
+        "item_3": "Contact",
+        "item_4": "News"
     },
     "home": {
         "title_1": "Germany ",
@@ -28,7 +29,7 @@
         "title": "Our Events"
     },
     "news": {
-        "title": "News",
+        "title": "Latest News",
         "place": "Place",
         "date": "Date of publication",
         "read_more": "Read more..."

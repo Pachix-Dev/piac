@@ -2,8 +2,8 @@
 import i18next, { t } from "i18next";
 ---
 
-<main
-    class="min-h-screen flex items-center justify-center py-10 px-4 sm:px-6 lg:px-8"
+<section
+    class="min-h-screen relative flex items-center justify-center py-10 px-4 sm:px-6 lg:px-8"
 >
     <video
         src="/video/bg-piac.mp4"
@@ -11,7 +11,7 @@ import i18next, { t } from "i18next";
         loop
         muted
         playsinline
-        class="w-full h-full object-fill fixed top-0 z-[-1]"
+        class="w-full h-full object-cover absolute top-0 z-[-1]"
     >
     </video>
     <div class="w-full max-w-4xl text-center">
@@ -39,4 +39,4 @@ import i18next, { t } from "i18next";
             </p>
         </div>
     </div>
-</main>
+</section>

@@ -1,0 +1,85 @@
+---
+import i18next from "i18next";
+interface Props {
+    images: Array<{
+        link?: string;
+        src: string;
+        alt?: string;
+        width?: number;
+        height?: number;
+        title?: string;
+        title_en?: string;
+        subtitle?: string;
+        subtitle_en?: string;
+        slug?: string;
+    }>;
+    isLeftToRight?: boolean;
+}
+
+const { images, isLeftToRight = false } = Astro.props as Props;
+const currentLanguage = i18next.language;
+const ruta = currentLanguage === "en" ? "/en/news/" : "/news/";
+---
+
+<div class="mt-3">
+    <ul
+        class="news-list flex flex-row flex-wrap gap-8 justify-center items-center"
+    >
+        {
+            images?.map((image) => (
+                <li>
+                    <div class="flex flex-col items-start">
+                        <a
+                            href={ruta + image.slug}
+                            class="group hover:opacity-80 transition-opacity duration-300"
+                            rel="noreferrer"
+                            aria-label={image.alt}
+                        >
+                            <img
+                                src={image.src}
+                                alt={image.alt}
+                                width="200px"
+                                height="100px"
+                                loading="lazy"
+                                class="h-75 w-50 rounded-2xl transition-transform duration-300 ease-in-out group-hover:scale-110"
+                                transition:name={`news${image.slug}`}
+                            />
+                            <div class="w-50 mx-auto">
+                                <p
+                                    class="text-l text-center text-black mt-2"
+                                    transition:name={`news${image.title}`}
+                                >
+                                    {currentLanguage === "en"
+                                        ? image.title_en
+                                        : image.title}
+                                </p>
+                                <p class="text-xs text-justify text-gray-500 mt-2">
+                                    {currentLanguage === "en"
+                                        ? image.subtitle_en
+                                        : image.subtitle}
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            ))
+        }
+    </ul>
+</div>
+
+<style>
+    .news-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .news-list li {
+        /* Puedes ajustar el ancho según lo que necesites */
+        min-width: 220px;
+    }
+    @media screen and (max-width: 768px) {
+        .news-list {
+            gap: 1rem;
+        }
+    }
+</style>

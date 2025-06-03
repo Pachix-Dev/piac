@@ -19,7 +19,7 @@ interface Props {
 const { images, isLeftToRight = false } = Astro.props as Props;
 const animationDirection = isLeftToRight ? "scroll" : "scroll-abs";
 const currentLanguage = i18next.language;
-const ruta = currentLanguage === "en" ? "/en/news/" : "/news/"
+const ruta = currentLanguage === "en" ? "/en/news/" : "/news/";
 ---
 
 <div class="enable-animation mt-3">
@@ -29,7 +29,6 @@ const ruta = currentLanguage === "en" ? "/en/news/" : "/news/"
         >
         </div>
         <div
-        
             class="bg-gradient-right bg-gradient-to-l to-transparent from-[#e6e2cf]"
         >
         </div>
@@ -48,7 +47,6 @@ const ruta = currentLanguage === "en" ? "/en/news/" : "/news/"
                                 aria-label={image.alt}
                             >
                                 <img
-                                    transition:name={`news${image.slug}`}
                                     src={image.src}
                                     alt={image.alt}
                                     width="200px"
@@ -57,14 +55,15 @@ const ruta = currentLanguage === "en" ? "/en/news/" : "/news/"
                                     class="h-75 w-50 rounded-2xl"
                                 />
                                 <div class="w-50 mx-auto">
-                                    <p
-                                        class="text-l text- text-center text-black mt-2"
-                                        transition:name={`news${image.title}`}
-                                    >
-                                        {currentLanguage === "en" ? image.title_en : image.title}
+                                    <p class="text-l text- text-center text-black mt-2">
+                                        {currentLanguage === "en"
+                                            ? image.title_en
+                                            : image.title}
                                     </p>
                                     <p class="text-xs text-justify text-gray-500 mt-2">
-                                        {currentLanguage === "en" ? image.subtitle_en : image.subtitle}
+                                        {currentLanguage === "en"
+                                            ? image.subtitle_en
+                                            : image.subtitle}
                                     </p>
                                 </div>
                             </a>
@@ -77,7 +76,6 @@ const ruta = currentLanguage === "en" ? "/en/news/" : "/news/"
 </div>
 
 <style>
-
     :root {
         --gap: 3rem;
     }

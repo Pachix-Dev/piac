@@ -17,7 +17,8 @@
             "dropdown_3": "Criterios de Actuación"
         },
         "item_2": "Recuerdos",
-        "item_3": "Contacto"
+        "item_3": "Contacto",
+        "item_4": "Noticias"
     },
     "home": {
         "title_1": "Alemania ",
@@ -28,7 +29,7 @@
         "title": "Nuestros Eventos"
     },
     "news": {
-        "title": "Noticias",
+        "title": "Lo Último en Noticias",
         "place": "Lugar",
         "date": "Fecha de publicación",
         "read_more": "Leer más..."

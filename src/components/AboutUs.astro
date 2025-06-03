@@ -1,6 +1,5 @@
 ---
 import ParticlesBg from "particles-bg";
-import CriteriaSection from "./Criteria";
 import i18next, { t } from "i18next";
 
 const TranslationsAbout = t("about", { returnObjects: true });
@@ -54,7 +53,7 @@ const TranslationsAbout = t("about", { returnObjects: true });
         </div>
         <div
             id="myv"
-            class="bg-[#fffbebd6] rounded-none md:rounded-2xl max-w-7xl mx-auto flex flex-col md:flex-row m-0 md:m-2 items-center justify-center"
+            class="bg-[#fffbebd6] rounded-none md:rounded-2xl max-w-7xl mx-auto flex flex-col md:flex-row m-4 md:m-2 items-center justify-center"
         >
             <div class="hidden md:block">
                 <img
@@ -63,7 +62,7 @@ const TranslationsAbout = t("about", { returnObjects: true });
                     alt="Imagen representativa de Misión y Visión"
                 />
             </div>
-            <div class="w-full p-3 m-3 text-black">
+            <div class="w-full p-2 text-black md:w-1/2">
                 <div class="w-full justify-start flex">
                     <h2
                         class="text-center w-fit text-3xl border-b-3 border-green-500 font-extrabold text-gray-900 mb-4"
@@ -94,6 +93,51 @@ const TranslationsAbout = t("about", { returnObjects: true });
                 </p>
             </div>
         </div>
-        <CriteriaSection client:load translates={TranslationsAbout} />
+        <section
+            id="ca"
+            class="bg-[#fffbebd6] rounded-none md:rounded-2xl m-0 md:m-2 my-5 py-10 px-4 md:px-10"
+        >
+            <div
+                class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10"
+            >
+                <div
+                    class="flex flex-col items-center text-center md:text-left md:items-center justify-center md:w-1/2"
+                >
+                    <h2
+                        class="text-center w-fit text-3xl border-b-3 border-green-500 font-extrabold text-gray-900 mb-4"
+                    >
+                        {t("about.tittle_3")}
+                    </h2>
+                    <div class="hidden md:flex gap-2">
+                        <img
+                            src="/img/AboutUs2.png"
+                            alt="Criterios de actuación"
+                            height="150"
+                            width="150"
+                        />
+                        <img
+                            src="/img/AboutUs.png"
+                            alt="Criterios de actuación"
+                            height="150"
+                            width="150"
+                        />
+                    </div>
+                </div>
+                <!-- Texto -->
+                <div class="md:w-1/2">
+                    <div class="p-6 space-y-4 text-black text-lg">
+                        <p class="text-justify text-lg leading-relaxed">
+                            {t("about.ca.text_1")}
+                        </p>
+                        <p class="text-justify text-lg leading-relaxed">
+                            {t("about.ca.text_1")}
+                        </p>
+                        <p class="text-justify text-lg leading-relaxed">
+                            {t("about.ca.text_1")}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </section>
