@@ -1,0 +1,15 @@
+---
+import Marquee from "../components/Marquee.astro";
+import { news } from "../data/data_news.js";
+---
+
+<section class="bg-[#f9f7f0] py-3">
+    <div class="rounded-3xl p-4 bg-white m-5">
+        <h2
+            class="border-b-3 border-b-yellow-500 w-fit font-bold text-4xl text-blond"
+        >
+            Noticias
+        </h2>
+    </div>
+    <Marquee images={news} isLeftToRight={false} />
+</section>

@@ -1,11 +1,11 @@
 ---
 import { changeLanguage } from "i18next";
-
 import Contact from "../components/shared/Contact.astro";
 import Layout from "../layouts/Layout.astro";
 import Inicio from "../components/Inicio.astro";
 import AboutUs from "../components/AboutUs.astro";
 import Eventos from "../components/Eventos.astro";
+import News from "../components/News.astro";
 
 changeLanguage("es");
 ---
@@ -13,6 +13,7 @@ changeLanguage("es");
 <Layout>
 	<Inicio />
 	<Eventos />
+	<News />
 	<AboutUs />
 	<Contact />
 </Layout>

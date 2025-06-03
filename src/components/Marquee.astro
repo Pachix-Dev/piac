@@ -1,0 +1,149 @@
+---
+interface Props {
+    images: Array<{
+        link?: string;
+        src: string;
+        alt?: string;
+        width?: number;
+        height?: number;
+        title?: string;
+        subtitle?: string;
+        slug?: string;
+    }>;
+    isLeftToRight?: boolean;
+}
+
+const { images, isLeftToRight = false } = Astro.props as Props;
+const animationDirection = isLeftToRight ? "scroll" : "scroll-abs";
+---
+
+<div class="enable-animation mt-3">
+    <div class="marquee marquee--hover-pause">
+        <div
+            class="bg-gradient-left bg-gradient-to-l from-transparent to-[#e6e2cf]"
+        >
+        </div>
+        <div
+            class="bg-gradient-right bg-gradient-to-l to-transparent from-[#e6e2cf]"
+        >
+        </div>
+        <ul
+            class="marquee__content"
+            style={{ "--animation": animationDirection }}
+        >
+            {
+                images?.map((image) => (
+                    <li>
+                        <div class="flex flex-col items-start">
+                            <a
+                                href={`/news/${image.slug}`}
+                                class="hover:opacity-80 transition-opacity duration-300"
+                                rel="noreferrer"
+                                aria-label={image.alt}
+                            >
+                                <img
+                                    transition:name={`news${image.slug}`}
+                                    src={image.src}
+                                    alt={image.alt}
+                                    width="200px"
+                                    height="100px"
+                                    loading="lazy"
+                                    class="h-75 w-50 rounded-2xl"
+                                />
+                                <div class="w-50 mx-auto">
+                                    <p
+                                        class="text-l text- text-center text-black mt-2"
+                                        transition:name={`news${image.title}`}
+                                    >
+                                        {image.title}
+                                    </p>
+                                    <p class="text-xs text-justify text-gray-500 mt-2">
+                                        {image.subtitle}
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</div>
+
+<style>
+    .marquee {
+        --gap: 3rem;
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        user-select: none;
+        gap: var(--gap);
+    }
+
+    .bg-gradient-left {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 20%;
+        pointer-events: none;
+        z-index: 2;
+    }
+
+    .bg-gradient-right {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 20%;
+        pointer-events: none;
+        z-index: 2;
+    }
+
+    .marquee__content {
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: var(--gap);
+        min-width: 100%;
+    }
+
+    .marquee__content img {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .marquee__content img:hover {
+        transform: scale(1.1);
+    }
+
+    @keyframes scroll {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(calc(0 - var(--gap)));
+        }
+    }
+
+    @keyframes scroll-abs {
+        from {
+            transform: translateX(calc(0 + var(--gap)));
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    .enable-animation .marquee__content {
+        animation: var(--animation) 20s linear infinite;
+    }
+
+    @media screen and (max-width: 768px) {
+        /* Adjust styles for smaller screens */
+        .marquee {
+            --gap: 1rem;
+        }
+    }
+</style>
