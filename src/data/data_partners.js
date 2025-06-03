@@ -1,6 +1,7 @@
 export const partners = [
   {
     title: "Miembros Asociados",
+    title_en: "Associated Members",
     items: [
       {
         name: "Allianz",
@@ -29,7 +30,7 @@ export const partners = [
       },
       {
         name: "BMW",
-        img: "/img/partners/BMW.svg",
+        img: "/img/partners/BMW.png",
         link: "https://www.bmw.com.mx/es/index.html",
       },
       {
@@ -75,7 +76,8 @@ export const partners = [
     ],
   },
   {
-    title: "Miembros Asociados",
+    title: "Miembros Honoríficos",
+    title_en: "Honorary Members",
     items: [
       {
         name: "Embajada de Alemania Ciudad de México",
@@ -96,6 +98,7 @@ export const partners = [
   },
   {
     title: "Aliados Estratégicos",
+    title_en: "Strategic Allies",
     items: [
       {
         name: "CAMEXA",
@@ -114,7 +117,7 @@ export const partners = [
       },
       {
         name: "Lufthansa Aviation Group",
-        img: "/img/partners/lufthansa.svg",
+        img: "/img/partners/lufthansa.png",
         link: "https://www.lufthansa.com/mx/es/lufthansa-aviation-group",
       },
     ],

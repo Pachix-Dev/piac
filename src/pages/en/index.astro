@@ -5,6 +5,7 @@ import Layout from "../../layouts/Layout.astro";
 import Inicio from "../../components/Inicio.astro";
 import AboutUs from "../../components/AboutUs.astro";
 import Eventos from "../../components/Eventos.astro";
+import Partners from "../../components/Partners.astro";
 
 changeLanguage("en");
 
@@ -13,17 +14,9 @@ const translates = t("contact", { returnObjects: true });
 ---
 
 <Layout>
-	<video
-		src="/video/bg-piac.mp4"
-		autoplay
-		loop
-		muted
-		playsinline
-		class="w-full h-full object-fill fixed top-0 z-[-1]"
-	>
-	</video>
 	<Inicio />
 	<Eventos />
 	<AboutUs />
+	<Partners />
 	<Contact client:load currentLanguage={currentLanguage} translates={translates} />
 </Layout>
