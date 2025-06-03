@@ -11,10 +11,10 @@
     },
     "menu": {
         "item_1": {
-            "title": "¿Quiénes Somos?",
-            "dropdown_1": "Nuestra Historia",
-            "dropdown_2": "Nosotros",
-            "dropdown_3": "Áreas de Experiencia"
+            "title": "Acerca de Nosotros",
+            "dropdown_1": "¿Quiénes Somos?",
+            "dropdown_2": "Misión y Visión",
+            "dropdown_3": "Criterios de Actuación"
         },
         "item_2": "Recuerdos",
         "item_3": "Contacto"

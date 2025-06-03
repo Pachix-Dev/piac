@@ -33,6 +33,7 @@ export function CriteriaSection({ translates }) {
         <motion.section
             layout
             transition={{ duration: 0.5, type: "spring" }}
+            id="ca"
             className="bg-[#fffbebd6] rounded-none md:rounded-2xl  m-0 md:m-2  my-5 py-10 px-4 md:px-10"
         >
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">

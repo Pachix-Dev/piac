@@ -11,10 +11,10 @@
     },
     "menu": {
         "item_1": {
-            "title": "Meet Us",
-            "dropdown_1": "Our History",
-            "dropdown_2": "About Us",
-            "dropdown_3": "Areas of Expertise"
+            "title": "About Us",
+            "dropdown_1": "Who We Are?",
+            "dropdown_2": "Mission and Vision",
+            "dropdown_3": "Criteria for Action"
         },
         "item_2": "Memories",
         "item_3": "Contact"
