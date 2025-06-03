@@ -1,0 +1,139 @@
+---
+import { changeLanguage } from "i18next";
+import { news } from "../../data/data_news";
+import Layout from "../../layouts/Layout.astro";
+
+changeLanguage("es");
+
+// 1. Generar rutas estáticas para todos los slugs
+export async function getStaticPaths() {
+    return news.map((item) => ({
+        params: { slug: item.slug },
+    }));
+}
+// 2. Obtener el artículo basado en el slug
+const { slug } = Astro.params;
+const article = news.find((item) => item.slug === slug);
+if (!article) {
+    throw new Error(`Artículo no encontrado para el slug: ${slug}`);
+}
+---
+
+<Layout>
+    <video
+        src="/video/bg-newspaper.mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+        class="w-full h-full object-fill fixed top-0 z-[-1]"
+    >
+    </video>
+
+    <div
+        class="bg-[#f9f7f0] my-5 rounded-none flex flex-col items-center justify-center mt-5 p-4 md:p-8 md:rounded-2xl lg:p-12 max-w-6xl mx-auto"
+    >
+        <div class="w-full mb-6">
+            <h1
+                class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center sm:text-left leading-tight"
+                transition:name={`news${article.title}`}
+            >
+                {article.title}
+            </h1>
+        </div>
+
+        <div
+            class="w-full flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-6"
+        >
+            <div class="w-full sm:w-1/2 lg:w-2/5 flex justify-center">
+                <img
+                    transition:name={`news${article.slug}`}
+                    src={article.src}
+                    alt={article.title}
+                    class="w-full h-auto max-h-96 object-cover rounded-xl shadow-lg"
+                    width="600"
+                    height="400"
+                />
+            </div>
+
+            <div
+                class="flex flex-col items-start justify-center w-full sm:w-1/2 lg:w-3/5"
+            >
+                <h2 class="text-xl sm:text-2xl font-semibold mb-3">
+                    {article.subtitle}
+                </h2>
+                <div
+                    class="article-content text-base sm:text-lg leading-relaxed text-gray-700"
+                >
+                    <p>{article.data}</p>
+                </div>
+
+                {/* Conditional Rendering for Place */}
+                {
+                    article.place && (
+                        <div class="flex items-center text-gray-600 text-sm mt-4">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 mr-2"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                                />
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                                />
+                            </svg>
+                            <strong>Lugar:</strong>
+                            <p class="ml-1">{article.place}</p>
+                        </div>
+                    )
+                }
+
+                {
+                    article.date && (
+                        <div class="flex items-center text-gray-600 text-sm mt-2">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 mr-2"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                                />
+                            </svg>
+                            <strong>Fecha de publicación:</strong>
+                            <p class="ml-1">{article.date}</p>
+                        </div>
+                    )
+                }
+                {
+                    article.link && (
+                        <div class=" w-full mt-4 flex justify-end">
+                            <a
+                                href={article.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-black  bg-amber-100 hover:bg-amber-50 transition-colors duration-300 px-6 py-4 rounded-lg shadow-md"
+                            >
+                                Leer más
+                            </a>
+                        </div>
+                    )
+                }
+            </div>
+        </div>
+    </div>
+</Layout>
