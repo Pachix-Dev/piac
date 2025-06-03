@@ -11,19 +11,27 @@
     },
     "menu": {
         "item_1": {
-            "title": "About Us",
+            "title": "Meet Us",
             "dropdown_1": "Our History",
-            "dropdown_2": "About Us (detailed)",
+            "dropdown_2": "About Us",
             "dropdown_3": "Areas of Expertise"
         },
         "item_2": "Memories",
-        "item_3": "News",
-        "item_4": "Contact"
+        "item_3": "Contact"
     },
     "home": {
         "title_1": "Germany ",
         "title_2": "in México",
         "description": "The most important private initiative for the dissemination of German culture in Mexico"
+    },
+    "events": {
+        "title": "Our Events"
+    },
+    "news": {
+        "title": "News",
+        "place": "Place",
+        "date": "Date of publication",
+        "read_more": "Read more..."
     },
     "memories": {
         "title": "Memories",

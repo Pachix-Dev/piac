@@ -3,14 +3,12 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 
 
+
 const EmblaCarousel = (props) => {
-    const { slides, options } = props;
+    const { slides, options, currentLanguage } = props;
     const [emblaRef] = useEmblaCarousel(options, [
         Autoplay({ playOnInit: true, delay: 2000, stopOnInteraction: false })
     ]);
-
-
-
     return (
 
         <div className="flex mx-auto relative overflow-hidden">
@@ -34,13 +32,13 @@ const EmblaCarousel = (props) => {
                             <div className='m-1 p-1'>
                                 <div className=" m-1 p-1 flex flex-col  justify-center   ">
                                     <h3 className="font-bold text-3xl text-gray-800 mb-1">
-                                        {recuerdo.title}
+                                        {currentLanguage === "en" ? recuerdo.title_en : recuerdo.title}
                                     </h3>
                                 </div>
                                 <div className="m-2 p-2 flex flex-col  justify-center ">
                                     {recuerdo.subtitle && (
                                         <p className="text-sm text-gray-600 mb-2">
-                                            {recuerdo.subtitle}
+                                            {currentLanguage === "en" ? recuerdo.subtitle_en : recuerdo.subtitle}
                                         </p>
                                     )}
                                     <span className="text-xs font-medium text-gray-500">
@@ -50,7 +48,7 @@ const EmblaCarousel = (props) => {
                                 <div className=" m-2 p-1 flex flex-col justify-center bg-white rounded-lg shadow-md ">
                                     {recuerdo.subtitle && (
                                         <p className=" font-bold text-sm text-gray-600 mb-2">
-                                            {recuerdo.subtitle}
+                                            {currentLanguage === "en" ? recuerdo.subtitle_en : recuerdo.subtitle}
                                         </p>
                                     )}
                                     <span className=" font-bold text-xs text-gray-500">

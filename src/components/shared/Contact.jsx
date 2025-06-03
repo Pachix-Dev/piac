@@ -113,8 +113,8 @@ export function Contact({ currentLanguage, translates }) {
 
     return (
         <>
-            <div id="contact" className="flex flex-row items-center justify-center bg-[#EAEAEA] px-40 pb-10">
-                <div className="flex-3/8 grid justify-center gap-5">
+            <div id="contact" className="flex flex-col md:flex-row lg:flex-row items-center justify-center bg-[#EAEAEA] p-5 lg:px-40 pb-10 gap-10"> 
+                <div className="lg:flex-3/8 md:flex-1/2 grid justify-center gap-5">
                     <div>
                         <img src="/img/Logo_PIAC.webp" alt="Logo PIAC" />
                     </div>
@@ -151,7 +151,7 @@ export function Contact({ currentLanguage, translates }) {
                         '>{okresponse}</p>
                     )}
                 </div>
-                <div className="flex-5/8 items-center justify-center  ">
+                <div className="lg:flex-5/8 md:flex-1/2 w-full  items-center justify-center  ">
                     <form onSubmit={handleSubmit}>
                         <div className="space-y-12">
                             <div>

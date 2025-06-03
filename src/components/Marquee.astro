@@ -1,4 +1,5 @@
 ---
+import i18next from "i18next";
 interface Props {
     images: Array<{
         link?: string;
@@ -7,7 +8,9 @@ interface Props {
         width?: number;
         height?: number;
         title?: string;
+        title_en?: string;
         subtitle?: string;
+        subtitle_en?: string;
         slug?: string;
     }>;
     isLeftToRight?: boolean;
@@ -15,6 +18,8 @@ interface Props {
 
 const { images, isLeftToRight = false } = Astro.props as Props;
 const animationDirection = isLeftToRight ? "scroll" : "scroll-abs";
+const currentLanguage = i18next.language;
+const ruta = currentLanguage === "en" ? "/en/news/" : "/news/"
 ---
 
 <div class="enable-animation mt-3">
@@ -23,7 +28,8 @@ const animationDirection = isLeftToRight ? "scroll" : "scroll-abs";
             class="bg-gradient-left bg-gradient-to-l from-transparent to-[#e6e2cf]"
         >
         </div>
-        <div
+        <divs
+        
             class="bg-gradient-right bg-gradient-to-l to-transparent from-[#e6e2cf]"
         >
         </div>
@@ -36,7 +42,7 @@ const animationDirection = isLeftToRight ? "scroll" : "scroll-abs";
                     <li>
                         <div class="flex flex-col items-start">
                             <a
-                                href={`/news/${image.slug}`}
+                                href={ruta + image.slug}
                                 class="hover:opacity-80 transition-opacity duration-300"
                                 rel="noreferrer"
                                 aria-label={image.alt}
@@ -55,10 +61,10 @@ const animationDirection = isLeftToRight ? "scroll" : "scroll-abs";
                                         class="text-l text- text-center text-black mt-2"
                                         transition:name={`news${image.title}`}
                                     >
-                                        {image.title}
+                                        {currentLanguage === "en" ? image.title_en : image.title}
                                     </p>
                                     <p class="text-xs text-justify text-gray-500 mt-2">
-                                        {image.subtitle}
+                                        {currentLanguage === "en" ? image.subtitle_en : image.subtitle}
                                     </p>
                                 </div>
                             </a>
@@ -71,8 +77,11 @@ const animationDirection = isLeftToRight ? "scroll" : "scroll-abs";
 </div>
 
 <style>
-    .marquee {
+
+    :root {
         --gap: 3rem;
+    }
+    .marquee {
         position: relative;
         display: flex;
         overflow: hidden;

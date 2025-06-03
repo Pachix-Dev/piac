@@ -1,6 +1,9 @@
 ---
 import Marquee from "../components/Marquee.astro";
 import { news } from "../data/data_news.js";
+import i18next, { t } from "i18next";
+
+
 ---
 
 <section class="bg-[#f9f7f0] py-3">
@@ -8,8 +11,8 @@ import { news } from "../data/data_news.js";
         <h2
             class="border-b-3 border-b-yellow-500 w-fit font-bold text-4xl text-blond"
         >
-            Noticias
+            {t("news.title")}
         </h2>
     </div>
-    <Marquee images={news} isLeftToRight={false} />
+    <Marquee images={news} isLeftToRight={false}/>
 </section>
