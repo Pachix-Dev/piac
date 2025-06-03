@@ -1,9 +1,11 @@
 ---
 import EmblaCarousel from "./Carousel/EmblaCarousel";
-import { recuerdos } from "../data/data_recuerdos.js";
+import { eventos } from "../data/data_eventos.js";
+import i18next, { t } from "i18next";
 
 const OPTIONS = { loop: true };
-const SLIDES_DATA = recuerdos;
+const SLIDES_DATA = eventos;
+const currentLanguage = i18next.language;
 ---
 
 <div class="bg-[#f9f7f0] p-1">
@@ -11,8 +13,8 @@ const SLIDES_DATA = recuerdos;
         <h2
             class="border-b-3 border-b-red-500 w-fit font-bold text-4xl text-blond"
         >
-            Nuestros Eventos
+            {t("events.title")}
         </h2>
     </div>
-    <EmblaCarousel client:only="react" slides={SLIDES_DATA} options={OPTIONS} />
+    <EmblaCarousel client:only="react" slides={SLIDES_DATA} options={OPTIONS} currentLanguage={currentLanguage} />
 </div>
