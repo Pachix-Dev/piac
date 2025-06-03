@@ -27,6 +27,12 @@
     "events": {
         "title": "Our Events"
     },
+    "news": {
+        "title": "News",
+        "place": "Place",
+        "date": "Date of publication",
+        "read_more": "Read more..."
+    },
     "memories": {
         "title": "Memories",
         "subtitle": "Since its founding in 1997, the PIAC has been an indispensable actor in the dissemination of German culture in Mexico. Let's follow our path that has been preserved in our memory."

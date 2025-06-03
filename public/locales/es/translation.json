@@ -27,6 +27,12 @@
     "events": {
         "title": "Nuestros Eventos"
     },
+    "news": {
+        "title": "Noticias",
+        "place": "Lugar",
+        "date": "Fecha de publicación",
+        "read_more": "Leer más..."
+    },
     "memories": {
         "title": "Recuerdos",
         "subtitle": "Desde su fundación en 1997, el PIAC ha sido un actor imprescindible en la difusión de la cultura alemana en México. Recorra con nosotros el camino que ha quedado guardado en nuestra memoria."

@@ -1,10 +1,11 @@
 ---
-import { changeLanguage } from "i18next";
 import { news } from "../../../data/data_news";
 import Layout from "../../../layouts/Layout.astro";
+import i18next, { t, changeLanguage } from "i18next";
 
 changeLanguage("en");
 
+const currentLanguage = i18next.language;
 // 1. Generar rutas estáticas para todos los slugs
 export async function getStaticPaths() {
     return news.map((item) => ({
@@ -38,7 +39,7 @@ if (!article) {
                 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center sm:text-left leading-tight"
                 transition:name={`news${article.title}`}
             >
-                {article.title}
+                {currentLanguage === "en" ? article.title_en : article.title}
             </h1>
         </div>
 
@@ -60,12 +61,14 @@ if (!article) {
                 class="flex flex-col items-start justify-center w-full sm:w-1/2 lg:w-3/5"
             >
                 <h2 class="text-xl sm:text-2xl font-semibold mb-3">
-                    {article.subtitle}
+                    {currentLanguage === "en" ? article.subtitle_en : article.subtitle}
                 </h2>
                 <div
                     class="article-content text-base sm:text-lg leading-relaxed text-gray-700"
                 >
-                    <p>{article.data}</p>
+                    <p>
+                        {currentLanguage === "en" ? article.data_en : article.data}
+                    </p>
                 </div>
 
                 {/* Conditional Rendering for Place */}
@@ -91,7 +94,7 @@ if (!article) {
                                     d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
                                 />
                             </svg>
-                            <strong>Lugar:</strong>
+                            <strong>{t("news.place")}:</strong>
                             <p class="ml-1">{article.place}</p>
                         </div>
                     )
@@ -114,7 +117,7 @@ if (!article) {
                                     d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
                                 />
                             </svg>
-                            <strong>Fecha de publicación:</strong>
+                            <strong>{t("news.date")}:</strong>
                             <p class="ml-1">{article.date}</p>
                         </div>
                     )
@@ -128,7 +131,7 @@ if (!article) {
                                 rel="noopener noreferrer"
                                 class="text-black  bg-amber-100 hover:bg-amber-50 transition-colors duration-300 px-6 py-4 rounded-lg shadow-md"
                             >
-                                Leer más
+                                {t("news.read_more")}
                             </a>
                         </div>
                     )
