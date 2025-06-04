@@ -61,5 +61,10 @@
             "text_2": " En este contexto, los valores del Patronato son opuestos a cualquier jerarquización cultural, discriminación o conflicto. El respeto, el diálogo, la apertura y la comprensión mutua guían su actuación.",
             "text_3": "Obra conjunta de sus Asociados, el Patronato opera mediante su contribución activa de forma voluntaria, permitiendo que sus recursos financieros se usen exclusivamente en su misión."
         }
+    },
+    "newspage": {
+        "title": "Noticias y Actualizaciones",
+        "subtitle_1": "Últimas Noticias",
+        "subtitle_2": "Más Actualizaciones"
     }
 }
