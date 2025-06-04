@@ -1,5 +1,5 @@
 import React from "react";
-import { news } from "../data/data_news.js";
+import { news } from "../data/data_news_2024.js";
 
 const NewsReact = (currentLanguage) => (
     <div className="relative flex items-start p-4 sm:p-8 md:px-0 max-w-6xl mx-auto">
