@@ -31,6 +31,8 @@
         "title": "News",
         "place": "Place",
         "date": "Date of publication",
+        "hour": "Hour",
+        "cost": "Cost",
         "read_more": "Read more..."
     },
     "memories": {
