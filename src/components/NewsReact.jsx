@@ -30,15 +30,16 @@ const NewsReact = (currentLanguage) => (
                                             />
                                             <div>
                                                 <h4 className="font-extrabold text-xl sm:text-2xl mb-2   drop-shadow">
-                                                    {item.title}
+                                                    {currentLanguage === "es"
+                                                        ? item.title
+                                                        : item.title_en}
                                                 </h4>
                                                 <time className="block mb-2 text-xs sm:text-sm text-yellow-500 font-semibold">
                                                     {item.year}
                                                 </time>
                                                 <p className="mb-2 text-base sm:text-lg text-gray-700 leading-relaxed">
-                                                    {currentLanguage === "en"
-                                                        ? item.subtitle_en
-                                                        : item.subtitle}
+                                                    {currentLanguage === "es"
+                                                        ? item.subtitle : item.subtitle_en}
                                                 </p>
                                             </div>
                                         </div>
@@ -63,17 +64,16 @@ const NewsReact = (currentLanguage) => (
                                             />
                                             <div>
                                                 <h4 className="font-extrabold text-xl sm:text-2xl mb-2 drop-shadow">
-                                                    {currentLanguage === "en"
-                                                        ? item.title_en
-                                                        : item.title}
+                                                    {currentLanguage === "es"
+                                                        ? item.title
+                                                        : item.title_en}
                                                 </h4>
                                                 <time className="block mb-2 text-xs sm:text-sm text-yellow-500 font-semibold">
                                                     {item.year}
                                                 </time>
                                                 <p className="mb-2 text-base sm:text-lg text-gray-700 leading-relaxed">
-                                                    {currentLanguage === "en"
-                                                        ? item.subtitle_en
-                                                        : item.subtitle}
+                                                    {currentLanguage === "es"
+                                                        ? item.subtitle : item.subtitle_en}
                                                 </p>
                                             </div>
                                         </div>
@@ -91,17 +91,17 @@ const NewsReact = (currentLanguage) => (
                                 />
                                 <div>
                                     <h4 className="font-extrabold text-xl sm:text-2xl mb-2 drop-shadow">
-                                        {currentLanguage === "en"
-                                            ? item.title_en
-                                            : item.title}
+                                        {currentLanguage === "es"
+                                            ? item.title
+                                            : item.title_en}
                                     </h4>
                                     <time className="block mb-2 text-xs sm:text-sm  font-semibold">
                                         {item.year}
                                     </time>
                                     <p className="mb-2 text-base sm:text-lg text-gray-700 leading-relaxed">
-                                        {currentLanguage === "en"
-                                            ? item.subtitle_en
-                                            : item.subtitle}
+                                        {currentLanguage === "es"
+                                            ? item.subtitle
+                                            : item.subtitle_en}
                                     </p>
                                 </div>
                             </div>
