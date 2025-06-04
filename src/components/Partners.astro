@@ -21,20 +21,21 @@ const currentLanguage = i18next.language;
             {(currentLanguage === "es") ? partnert.title : partnert.title_en}
           </h2>
         </div>
-        <div class="flex flex-wrap justify-center gap-10 gap-x-15 pt-10 pb-10">
+        <div class="grid grid-cols-[repeat(auto-fit,_minmax(150px,_max-content))] justify-center gap-10  pt-10 pb-10">
           {partnert.items.map((item) => (
             <a
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
+              class="bg-white grid place-items-center p-4 rounded-2xl"
             >
-              <div class="w-[250px] h-[100px] bg-white overflow-hidden flex items-center justify-center p-5 rounded-2xl">
+              
                 <img
                   src={item.img}
                   alt={item.name}
-                  class="object-contain w-full h-full"
+                  width={item.width}
                 />
-              </div>
+             
             </a>
           ))}
         </div>

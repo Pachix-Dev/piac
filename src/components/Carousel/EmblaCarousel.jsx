@@ -7,7 +7,7 @@ import Autoplay from 'embla-carousel-autoplay';
 const EmblaCarousel = (props) => {
     const { slides, options, currentLanguage } = props;
     const [emblaRef] = useEmblaCarousel(options, [
-        Autoplay({ playOnInit: true, delay: 2000, stopOnInteraction: false })
+        Autoplay({ playOnInit: true, delay: 4000, stopOnInteraction: false })
     ]);
     return (
 
@@ -20,40 +20,30 @@ const EmblaCarousel = (props) => {
                         // Cada slide
                         <div key={index} className="grid grid-cols-1 gap-4 sm:flex sm:gap-0 bg-white rounded-xl justify-center items-center  h-fit flex-none w-fit p-4 m-5 ">
 
-                            < div className="flex md:hidden  justify-center " >
+                            < div className="md:hidden flex justify-center" >
                                 <img
-                                    className="w-fit h-34 rounded-lg md:w-32 lg:w-24"
+                                    className="h-50 rounded-lg sm:w-lg md:w-32 lg:w-24"
                                     src={recuerdo.img}
                                     alt={recuerdo.title}
                                 />
                             </div>
 
                             {/* Detalles del slide */}
-                            <div className='m-1 p-1'>
+                            <div className='lg:w-lg md:w-sm  m-1 p-1'>
                                 <div className=" m-1 p-1 flex flex-col  justify-center   ">
                                     <h3 className="font-bold text-3xl text-gray-800 mb-1">
                                         {currentLanguage === "en" ? recuerdo.title_en : recuerdo.title}
                                     </h3>
                                 </div>
                                 <div className="m-2 p-2 flex flex-col  justify-center ">
-                                    {recuerdo.subtitle && (
-                                        <p className="text-sm text-gray-600 mb-2">
-                                            {currentLanguage === "en" ? recuerdo.subtitle_en : recuerdo.subtitle}
-                                        </p>
-                                    )}
                                     <span className="text-xs font-medium text-gray-500">
                                         {recuerdo.year}
                                     </span>
                                 </div>
                                 <div className=" m-2 p-1 flex flex-col justify-center bg-white rounded-lg shadow-md ">
-                                    {recuerdo.subtitle && (
-                                        <p className=" font-bold text-sm text-gray-600 mb-2">
-                                            {currentLanguage === "en" ? recuerdo.subtitle_en : recuerdo.subtitle}
-                                        </p>
-                                    )}
-                                    <span className=" font-bold text-xs text-gray-500">
-                                        {recuerdo.year}
-                                    </span>
+                                    <p className="text-md text-gray-600 mb-2 text-justify">
+                                        {currentLanguage === "en" ? recuerdo.data_en : recuerdo.data}
+                                    </p>
                                 </div>
                             </div>
 
