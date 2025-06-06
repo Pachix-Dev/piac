@@ -13,9 +13,9 @@ const currentLanguage = i18next.language;
       class="w-full h-full object-cover filter blur-sm"
     />
   </div>
-  <div class="relative z-10">
+  <div class="relative z-10" >
     {partners.map((partnert) => (
-      <div>
+      <div data-aos="fade-up" data-aos-duration="3000">
         <div class="w-full justify-center flex">
           <h2 class="text-center text-white border-b-4 border-amber-400 w-fit font-bold text-5xl italic mb-10 mt-10">
             {(currentLanguage === "es") ? partnert.title : partnert.title_en}
@@ -29,13 +29,11 @@ const currentLanguage = i18next.language;
               rel="noopener noreferrer"
               class="bg-white grid place-items-center p-4 rounded-2xl"
             >
-              
-                <img
-                  src={item.img}
-                  alt={item.name}
-                  width={item.width}
-                />
-             
+              <img
+                src={item.img}
+                alt={item.name}
+                width={item.width}
+              />
             </a>
           ))}
         </div>
