@@ -70,5 +70,9 @@
         "subtitle_2": "Más Actualizaciones"
     },
     "button_more": "Ver más...",
-    "button_back_top": "Volver arriba"
+    "button_back_top": "Volver arriba",
+    "breadcrumb": {
+        "home": "Inicio",
+        "news": "Noticias"
+    }
 }
