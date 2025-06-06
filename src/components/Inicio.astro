@@ -14,8 +14,11 @@ import i18next, { t } from "i18next";
         class="w-full h-full object-cover absolute top-0 z-[-1]"
     >
     </video>
-    <div class="w-full max-w-4xl text-center">
-        <div class="flex justify-center mb-6 sm:mb-8">
+    <div class="w-full max-w-4xl text-center" 
+    data-aos="fade-up"
+    data-aos-duration="3000">
+        <div class="flex justify-center mb-6 sm:mb-8"
+        >
             <img
                 width="250"
                 src="/img/icon_PIAC.webp"
@@ -26,6 +29,7 @@ import i18next, { t } from "i18next";
 
         <div
             class="uppercase text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-6"
+            
         >
             <p class="font-bold inline-block mr-2">{t("home.title_1")}</p>
             <p class="inline-block">{t("home.title_2")}</p>

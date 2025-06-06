@@ -12,11 +12,31 @@ const currentLanguage = i18next.language;
 <Layout>
 	<div class="px-7 py-5 md:px-15 md:py-5  lg:px-30 lg:py-10">
 		<div class=" lg:px-20 text-center">
-			<h1 class="text-5xl border-b-3 border-green-600 pb-5">{t("memories.title")}</h1>
-			<p class="my-6 text-xl">{t("memories.subtitle")}</p>
+			<h1 class="text-5xl border-b-3 border-green-600 pb-5" data-aos="fade-right" data-aos-duration="3000">{t("memories.title")}</h1>
+			<p class="my-6 text-xl" data-aos="fade-left" data-aos-duration="3000">{t("memories.subtitle")}</p>
 		</div>
-		<div class="pt-1">
+		<div class="pt-1" data-aos="zoom-in" data-aos-duration="1500">
 			<Gallery client:load currentLanguage={currentLanguage} />
 		</div>
 	</div>
+	<button
+            class="fixed bottom-8 right-8 z-50 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2 transition-all duration-300"
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+            aria-label="Volver arriba"
+        >
+            {t("button_back_top")}
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 15l7-7 7 7"></path>
+            </svg>
+        </button>
 </Layout>
