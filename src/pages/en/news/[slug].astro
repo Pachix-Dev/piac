@@ -18,7 +18,6 @@ const article = news.find((item) => item.slug === slug);
 if (!article) {
     throw new Error(`Artículo no encontrado para el slug: ${slug}`);
 }
-const title = currentLanguage === "en" ? article.title_en : article.title;
 ---
 
 <Layout>
