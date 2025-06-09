@@ -502,7 +502,7 @@ export const recuerdos = [
       "El guitarrista alemán Lucian Plessner cautivó con obras de compositores judío-mexicanos",
     subtitle_en:
       "The German guitarist Lucian Plessner caught with works of composers of the Jewish-Mexican genre",
-    img: "/img/recuerdos/2023/LucianPlessner.jpeg",
+    img: "/img/recuerdos/2023/LucianPlessner.webp",
     year: "2023",
   },
   {
