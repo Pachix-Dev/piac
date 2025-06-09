@@ -1,0 +1,75 @@
+---
+import { ClientRouter } from 'astro:transitions'
+import { t } from 'i18next'
+
+import Footer from '../components/shared/Footer.astro'
+import Menu from '../components/shared/Menu.astro'
+import '../styles/global.css'
+---
+
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='description' content={t('home.description')} />
+    <link rel='icon' type='image/svg+xml' href='/PIAC.svg' />
+    <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet' />
+    <link
+      rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lightgallery-bundle.min.css'
+      integrity='sha512-fXavT4uA4L0uTUFHC275D7zd751ohbSuD6VUMc5JysWfmR+NxTI3w7etE7N9hjTETcoh0w0V+24Cel4xXnqvCg=='
+      crossorigin='anonymous'
+      referrerpolicy='no-referrer'
+    />
+    <title>
+      {t('home.title')}
+    </title>
+    <ClientRouter transition:animate='fade' />
+  </head>
+  <body>
+    <Menu />
+    <slot />
+    <Footer />
+
+    <script
+      is:inline
+      data-astro-rerun
+      src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+    <script is:inline data-astro-rerun>
+      AOS.init()
+    </script>
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/lightgallery.min.js'
+      integrity='sha512-n02TbYimj64qb98ed5WwkNiSw/i9Xlvv4Ehvhg0jLp3qMAMWCYUHbOMbppZ0vimtyiyw9NqNqxUZC4hq86f4aQ=='
+      crossorigin='anonymous'
+      referrerpolicy='no-referrer'></script>
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/zoom/lg-zoom.min.js'
+      integrity='sha512-fwxc/NvaA3du4ZRE6J/Ilrqi2xwOB1QfHBR4neA+ha13/pkweiRfPgBiV4VbfAf/Vi3rXAXdQ3zexUJ1V2bWrg=='
+      crossorigin='anonymous'
+      referrerpolicy='no-referrer'></script>
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/thumbnail/lg-thumbnail.min.js'
+      integrity='sha512-jZxB8WysJ6S6e4Hz5IZpAzR1WiflBl0hBxriHGlLkUN32T18+rD1aLNifa1KTll/zx8lIfWVP1NqEjHi/Khy5w=='
+      crossorigin='anonymous'
+      referrerpolicy='no-referrer'></script>
+    <script is:inline data-astro-rerun type='text/javascript'>
+      lightGallery(document.getElementById('lightgallery'), {
+        plugins: [lgZoom, lgThumbnail],
+        licenseKey: 'your_license_key',
+        speed: 500,
+        // ... other settings
+      })
+    </script>
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>

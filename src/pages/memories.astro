@@ -1,42 +1,125 @@
 ---
 import i18next, { t, changeLanguage } from "i18next";
-import Layout from "../layouts/Layout.astro";
-import { Gallery } from "../components/recuerdos/gallery.jsx";
-import Gallery2 from "../components/recuerdos/ejemplo.jsx";
+import LayoutRecuerdos from "../layouts/LayoutRecuerdos.astro";
+import { recuerdos } from "../data/data_recuerdos";
+import "../components/recuerdos/gallery.css";
 
 changeLanguage("es");
 
 const currentLanguage = i18next.language;
+const items = recuerdos.map((item) => {
+    return {
+        id: item.id,
+        title: item.title,
+        title_en: item.title_en,
+        src: item.img,
+        thumb: item.img,
+        year: item.year,
+        subHtml: `<div class="lightGallery-captions">
+                <h3>${currentLanguage === "es" ? item.title : item.title_en}</h3>
+                <p>${currentLanguage === "es" ? item.subtitle : item.subtitle_en}</p>
+            </div>`,
+    };
+});
 ---
 
-<Layout>
-	<div class="px-7 py-5 md:px-15 md:py-5  lg:px-30 lg:py-10">
-		<div class=" lg:px-20 text-center">
-			<h1 class="text-5xl border-b-3 border-green-600 pb-5" data-aos="fade-right" data-aos-duration="3000">{t("memories.title")}</h1>
-			<p class="my-6 text-xl" data-aos="fade-left" data-aos-duration="3000">{t("memories.subtitle")}</p>
-		</div>
-		<div class="pt-1" data-aos="zoom-in" data-aos-duration="1500">
-			<Gallery client:load currentLanguage={currentLanguage} />
-		</div>
-	</div>
-	<button
-            class="fixed bottom-8 right-8 z-50 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2 transition-all duration-300"
-            onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
-            aria-label="Volver arriba"
-        >
-            {t("button_back_top")}
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
+<LayoutRecuerdos>
+  <div class='px-7 py-5 md:px-15 md:py-5 lg:px-30 lg:py-10'>
+    <div class='lg:px-20 text-center'>
+      <h1
+        class='text-5xl border-b-3 border-green-600 pb-5'
+        data-aos='fade-right'
+        data-aos-duration='3000'
+      >
+        {t('memories.title')}
+      </h1>
+      <p class='my-6 text-xl' data-aos='fade-left' data-aos-duration='3000'>
+        {t('memories.subtitle')}
+      </p>
+    </div>
+    <div class='flex flex-wrap justify-center gap-5 lg:gap-10 my-7 years'>
+      {/* Los estilos de los años están en el archivo gallery.css */}
+      <button data-year='all' onclick="setFilter('all')"> Todos </button>
+      <button data-year='2013' onclick="setFilter('2013')"> 2013 </button>
+      <button data-year='2014' onclick="setFilter('2014')"> 2014 </button>
+      <button data-year='2015' onclick="setFilter('2015')"> 2015 </button>
+      <button data-year='2016' onclick="setFilter('2016')"> 2016 </button>
+      <button data-year='2017' onclick="setFilter('2017')"> 2017 </button>
+      <button data-year='2018' onclick="setFilter('2018')"> 2018 </button>
+      <button data-year='2019' onclick="setFilter('2019')"> 2019 </button>
+      <button data-year='2020' onclick="setFilter('2020')"> 2020 </button>
+      <button data-year='2021' onclick="setFilter('2021')"> 2021 </button>
+      <button data-year='2022' onclick="setFilter('2022')"> 2022 </button>
+      <button data-year='2023' onclick="setFilter('2023')"> 2023 </button>
+      <button data-year='2024' onclick="setFilter('2024')"> 2024 </button>
+    </div>
+    <div class='pt-1' data-aos='zoom-in' data-aos-duration='1500'>
+      <div id='lightgallery' class='pinterest-wrapper'>
+        {
+          items.map((recuerdo) => (
+            <a
+              href={recuerdo.src}
+              class='item'
+              data-sub-html={recuerdo.subHtml}
             >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M5 15l7-7 7 7"></path>
-            </svg>
-        </button>
-</Layout>
+              <img
+                alt={recuerdo.title}
+                src={recuerdo.src}
+                class='h-full w-full object-cover rounded-lg'
+              />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+  <button
+    class='fixed bottom-8 right-8 z-50 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2 transition-all duration-300'
+    onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+    aria-label='Volver arriba'
+  >
+    {t('button_back_top')}
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      class='h-6 w-6'
+      fill='none'
+      viewBox='0 0 24 24'
+      stroke='currentColor'
+      stroke-width='2'
+    >
+      <path stroke-linecap='round' stroke-linejoin='round' d='M5 15l7-7 7 7'
+      ></path>
+    </svg>
+  </button>
+</LayoutRecuerdos>
+
+<script is:inline data-astro-rerun>
+  function setFilter(year) {
+    const items = document.querySelectorAll('.item')
+    const years = document.querySelectorAll('.years button')
+
+    // Resetea el filtro
+    years.forEach((yearLink) => {
+      yearLink.classList.remove('active')
+    })
+
+    if (year === 'all') {
+      items.forEach((item) => {
+        item.style.display = 'block'
+      })
+    } else {
+      items.forEach((item) => {
+        if (item.querySelector('img').src.includes(year)) {
+          item.style.display = 'block'
+        } else {
+          item.style.display = 'none'
+        }
+      })
+    }
+
+    // Marca el año seleccionado
+    document
+      .querySelector(`.years a[data-year="${year}"]`)
+      .classList.add('active')
+  }
+</script>
