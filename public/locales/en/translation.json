@@ -13,8 +13,8 @@
         "item_1": {
             "title": "About Us",
             "dropdown_1": "Who We Are?",
-            "dropdown_2": "Mission and Vision",
-            "dropdown_3": "Criteria for Action"
+            "dropdown_2": "Mission and vision",
+            "dropdown_3": "Criteria for action"
         },
         "item_2": "Memories",
         "item_3": "Contact",
@@ -24,13 +24,14 @@
         "title": "PIAC | The most important private initiative for the dissemination of German culture in Mexico",
         "title_1": "Germany ",
         "title_2": "in México",
-        "description": "The most important private initiative for the dissemination of German culture in Mexico"
+        "description": "The most important private initiative for the dissemination of German culture in Mexico",
+        "testimonial": "Testimonials"
     },
     "events": {
         "title": "Our Events"
     },
     "news": {
-        "title": "Latest News",
+        "title": "Latest news",
         "place": "Place",
         "date": "Date of publication",
         "hour": "Hour",
@@ -42,13 +43,13 @@
         "subtitle": "Since its founding in 1997, the PIAC has been an indispensable actor in the dissemination of German culture in Mexico. Let's follow our path that has been preserved in our memory."
     },
     "about": {
-        "tittle_1": "About Us",
+        "tittle_1": "About us",
         "aboutUs": {
             "text_1": "The Private Initiative for the Promotion of German Culture in Mexico (PIAC) is a non-profit association founded in 1997 by a group of German and Mexican entrepreneurs. Its main objective is to promote and disseminate German culture in Mexico through various cultural, educational, and social initiatives.",
             "text_2": "The PIAC works closely with various institutions, including the German Embassy in Mexico, the Goethe-Institut, and other cultural organizations, to carry out its activities. It also collaborates with Mexican universities and schools to promote the teaching of the German language and culture.",
             "text_3": "In addition to its cultural activities, the PIAC also supports social projects in Mexico, particularly those that benefit children and young people. Through its initiatives, the PIAC seeks to strengthen ties between Germany and Mexico and promote mutual understanding between both cultures."
         },
-        "tittle_2": "Mission and Vision",
+        "tittle_2": "Mission and vision",
         "m&v": {
             "text_1": "The PIAC contributes to the fusion of German and Mexican culture through:",
             "text_2": "Organizing high-profile events in all areas of culture (arts and others), either directly or through financial contributions.",

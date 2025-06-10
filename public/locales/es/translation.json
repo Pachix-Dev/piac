@@ -24,13 +24,14 @@
         "title": "PIAC | La iniciativa privada más importante para la difusión de la cultura Alemana en México",
         "title_1": "Alemania ",
         "title_2": "en México",
-        "description": "La iniciativa privada más importante para la difusión de la cultura Alemana en México"
+        "description": "La iniciativa privada más importante para la difusión de la cultura Alemana en México",
+        "testimonial":"Testimoniales"
     },
     "events": {
-        "title": "Nuestros Eventos"
+        "title": "Nuestros eventos"
     },
     "news": {
-        "title": "Lo Último en Noticias",
+        "title": "Lo último en noticias",
         "place": "Lugar",
         "date": "Fecha de publicación",
         "hour": "Horario",
@@ -42,13 +43,13 @@
         "subtitle": "Desde su fundación en 1997, el PIAC ha sido un actor imprescindible en la difusión de la cultura alemana en México. Recorra con nosotros el camino que ha quedado guardado en nuestra memoria."
     },
     "about": {
-        "tittle_1": "¿Quiénes Somos?",
+        "tittle_1": "¿Quiénes somos?",
         "aboutUs": {
             "text_1": "Fundado en 1997, el Patronato de la Industria Alemana para la Cultura es una Asociación Civil y donataria autorizada ante SEDESOL, conformado por empresas Mexicanas de capital Alemán o con otro tipo de vínculo fuerte con Alemania.",
             "text_2": "Parte del éxito económico de los miembros del Patronato, el cual les permite generar un número significativo de empleos directos e indirectos en México, se basa en valores éticos, responsabilidad social, actitud sustentable tecnologías, técnicas, productos, servicios y originarios de Alemania.",
             "text_3": "En México y en el mundo, la “Calidad Alemana” beneficia de un gran prestigio. Conscientes de lo que deben a la expresión de amistad y al reconocimiento que siempre reciben de parte de los mexicanos, los miembros del Patronato buscan retribuir en el contexto de su Responsabilidad Social Empresarial, difundiendo y promocionando la cultura Alemana en México."
         },
-        "tittle_2": "Misión y Visión",
+        "tittle_2": "Misión y visión",
         "m&v": {
             "text_1": "El Patronato contribuye a la fusión de la cultura Alemana y Mexicana a través de:",
             "text_2": "Realización de eventos de alto prestigio en todos los ámbitos de la cultura (artes y otros), ya sea directamente o mediante aportaciones económicas.",
@@ -66,9 +67,9 @@
         }
     },
     "newspage": {
-        "title": "Noticias y Actualizaciones",
-        "subtitle_1": "Últimas Noticias",
-        "subtitle_2": "Más Actualizaciones"
+        "title": "Noticias y actualizaciones",
+        "subtitle_1": "Últimas noticias",
+        "subtitle_2": "Más actualizaciones"
     },
     "button_more": "Ver más...",
     "button_back_top": "Volver arriba",

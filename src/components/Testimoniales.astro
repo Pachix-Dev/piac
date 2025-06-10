@@ -1,0 +1,31 @@
+---
+import { t } from 'i18next'
+---
+
+<section class='container mx-auto px-4 py-10'>
+  <p class='text-4xl text-black font-bold text-center'>
+    {t('home.testimonial')}
+  </p>
+
+  <div class='mt-10 flex flex-wrap justify-center items-center gap-10'>
+    <lite-youtube
+      videoid='b5yqaP3pjxI'
+      posterquality='maxresdefault'
+      params='controls=0&enablejsapi=1'
+      class='rounded-2xl h-96 w-60'></lite-youtube>
+    <lite-youtube
+      videoid='hu8PyByExcI'
+      posterquality='maxresdefault'
+      params='controls=0&enablejsapi=1'
+      class='rounded-2xl h-96 w-60'></lite-youtube>
+    <lite-youtube
+      videoid='SfctGr6nbmU'
+      posterquality='maxresdefault'
+      params='controls=0&enablejsapi=1'
+      class='rounded-2xl h-96 w-60'></lite-youtube>
+  </div>
+</section>
+
+<script>
+  import '@justinribeiro/lite-youtube'
+</script>

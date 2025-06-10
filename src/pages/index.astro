@@ -7,6 +7,7 @@ import AboutUs from "../components/AboutUs.astro";
 import Eventos from "../components/Eventos.astro";
 import News from "../components/News.astro";
 import Partners from "../components/Partners.astro";
+import Testimoniales from "../components/Testimoniales.astro";
 
 changeLanguage("es");
 
@@ -15,14 +16,15 @@ const translates = t("contact", { returnObjects: true });
 ---
 
 <Layout>
-	<Inicio />
-	<Eventos />
-	<News />
-	<AboutUs />
-	<Partners />
-	<Contact
-		client:load
-		currentLanguage={currentLanguage}
-		translates={translates}
-	/>
+  <Inicio />
+  <Eventos />
+  <News />
+  <AboutUs />
+  <Testimoniales />
+  <Partners />
+  <Contact
+    client:only
+    currentLanguage={currentLanguage}
+    translates={translates}
+  />
 </Layout>
