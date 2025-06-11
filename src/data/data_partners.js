@@ -12,8 +12,8 @@ export const partners = [
       },
       {
         name: "BASF",
-        width: "200px",
-        height: "200px",
+        width: "137",
+        height: "68",
         img: "/img/partners/basf-logo.webp",
         link: "https://www.basf.com/mx/es",
       },

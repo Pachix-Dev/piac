@@ -4,7 +4,6 @@ interface Props {
     images: Array<{
         link: string;
         src?: string;
-        alt?: string;
         width?: string | number;
         height?: string | number;
         title?: string;
@@ -33,15 +32,15 @@ const ruta = currentLanguage === "en" ? "/en/news/" : "/news/";
                             href={ruta + image.slug}
                             class="group hover:opacity-80 transition-opacity duration-300"
                             rel="noreferrer"
-                            aria-label={image.alt}
+                            aria-label={image.title}
                         >
                             <img
                                 src={image.src}
-                                alt={image.alt}
+                                alt={image.title}
                                 width="200px"
-                                height="100px"
+                                height="300px"
                                 loading="lazy"
-                                class="h-75 w-50 rounded-2xl transition-transform duration-300 ease-in-out group-hover:scale-110"
+                                class="h-75 w-50 rounded-2xl transition-transform duration-300 ease-in-out group-hover:scale-110 object-cover"
                                 transition:name={`news${image.slug}`}
                             />
                             <div class="w-50 mx-auto">

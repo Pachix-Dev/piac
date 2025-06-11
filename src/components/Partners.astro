@@ -11,6 +11,9 @@ const currentLanguage = i18next.language;
       src="/img/bg-aliados.webp"
       alt="Imagen de los aliados"
       class="w-full h-full object-cover filter blur-sm"
+      loading="lazy"
+      width=""
+      height=""
     />
   </div>
   <div class="relative z-10">
@@ -30,7 +33,7 @@ const currentLanguage = i18next.language;
                   rel="noopener noreferrer"
                   class="bg-white grid place-items-center p-4 rounded-2xl"
                 >
-                  <img src={item.img} alt={item.name} width={item.width} />
+                  <img src={item.img} alt={item.name} width={item.width} height={item.height} />
                 </a>
               ))}
             </div>
