@@ -29,11 +29,11 @@ const NewsReact = (currentLanguage) => (
                                                 className="hidden md:block h-32 sm:h-40 w-24 sm:w-32 object-cover rounded-lg shadow  "
                                             />
                                             <div>
-                                                <h4 className="font-extrabold text-xl sm:text-2xl mb-2   drop-shadow">
+                                                <p className="font-extrabold text-xl sm:text-2xl mb-2   drop-shadow">
                                                     {currentLanguage === "es"
                                                         ? item.title
                                                         : item.title_en}
-                                                </h4>
+                                                </p>
                                                 <time className="block mb-2 text-xs sm:text-sm text-yellow-500 font-semibold">
                                                     {item.year}
                                                 </time>
@@ -63,11 +63,11 @@ const NewsReact = (currentLanguage) => (
                                                 className="hidden md:block h-32 sm:h-40 w-24 sm:w-32 object-cover rounded-lg shadow"
                                             />
                                             <div>
-                                                <h4 className="font-extrabold text-xl sm:text-2xl mb-2 drop-shadow">
+                                                <p className="font-extrabold text-xl sm:text-2xl mb-2 drop-shadow">
                                                     {currentLanguage === "es"
                                                         ? item.title
                                                         : item.title_en}
-                                                </h4>
+                                                </p>
                                                 <time className="block mb-2 text-xs sm:text-sm text-yellow-500 font-semibold">
                                                     {item.year}
                                                 </time>
