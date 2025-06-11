@@ -81,10 +81,10 @@ export function Contact({ currentLanguage, translates }) {
     >
       <div className='lg:flex-3/8 md:flex-1/2 grid justify-center gap-5'>
         <div>
-          <img src='/img/Logo_PIAC.webp' alt='Logo PIAC' />
+          <img src='/img/Logo_PIAC.webp' alt='Logo PIAC' width="272" height="64" />
         </div>
         <div className='text-center'>
-          <p className='text-lg text-gray-500'>{translates.subtitle}</p>
+          <p className='text-lg text-gray-600'>{translates.subtitle}</p>
           <p className='text-lg my-5'>
             <a
               href='mailto:contacto@piac.org.mx'
@@ -94,13 +94,14 @@ export function Contact({ currentLanguage, translates }) {
               contacto@piac.org.mx
             </a>
           </p>
-          <p className='text-lg text-gray-500'>{translates.socialmedia}</p>
+          <p className='text-lg text-gray-600'>{translates.socialmedia}</p>
         </div>
         <div className='flex flex-row gap-2 justify-center'>
           <a
             href='https://www.facebook.com/piac.org.mx'
             target='_blank'
             rel='noopener noreferrer'
+            aria-label='Facebook'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -124,6 +125,7 @@ export function Contact({ currentLanguage, translates }) {
             href='https://www.linkedin.com/company/piac-org-mx'
             target='_blank'
             rel='noopener noreferrer'
+            aria-label='Linkedin'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -147,6 +149,7 @@ export function Contact({ currentLanguage, translates }) {
             href='https://www.instagram.com/piac_org/'
             target='_blank'
             rel='noopener noreferrer'
+            aria-label='Instagram'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -210,6 +213,7 @@ export function Contact({ currentLanguage, translates }) {
             href='https://www.youtube.com/@PIAC.A.C'
             target='_blank'
             rel='noopener noreferrer'
+            aria-label="Youtube"
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
