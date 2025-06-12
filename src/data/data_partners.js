@@ -56,7 +56,7 @@ export const partners = [
         name: "Colegio Humboldt",
         width: "120px",
         height: "160px",
-        img: "/img/partners/Colegio_humboldt.webp",
+        img: "/img/partners/ColegioAleman.webp",
         link: "https://colegio-humboldt.edu.mx",
       },
       {
