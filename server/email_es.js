@@ -34,7 +34,7 @@ const email_es = ({ data }) => {
         <td colspan="2">
           <hr style="width:100%;border-top:1px solid rgb(214,216,219);border-right:none rgb(214,216,219);border-bottom:none rgb(214,216,219);border-left:none rgb(214,216,219);margin:30px 0px">
           <p style="font-size:12px;line-height:15px;margin:4px 0px;color:rgb(145,153,161);text-align:center">
-            © 2025 PIAC. Patronato de la Industria Alemana para la Cultura es una Asociación Civil.
+            © 2025 PIAC. patronato de la Industria Alemana para la Cultura es una Asociación Civil.
           </p>
         </td>
       </tr>
