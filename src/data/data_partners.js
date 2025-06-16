@@ -1,7 +1,7 @@
 export const partners = [
   {
-    title: "Miembros Asociados",
-    title_en: "Associated Members",
+    title: "Miembros asociados",
+    title_en: "Associated members",
     items: [
       {
         name: "Allianz",
@@ -104,8 +104,8 @@ export const partners = [
     ],
   },
   {
-    title: "Miembros Honoríficos",
-    title_en: "Honorary Members",
+    title: "Miembros honoríficos",
+    title_en: "Honorary members",
     items: [
       {
         name: "Embajada de Alemania Ciudad de México",
@@ -131,8 +131,8 @@ export const partners = [
     ],
   },
   {
-    title: "Aliados Estratégicos",
-    title_en: "Strategic Allies",
+    title: "Aliados estratégicos",
+    title_en: "Strategic allies",
     items: [
       {
         name: "CAMEXA",
