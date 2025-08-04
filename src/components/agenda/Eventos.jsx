@@ -27,7 +27,7 @@ const Eventos = (currentLanguage) => {
                     <li key={mainEvent.id} className="mb-1 p-3" >
                         <button
                             onClick={() => toggleMainEvent(mainEvent.id)}
-                            className='text-black text-2xl text-left w-full p-2.5 font-bold rounded-lg justify-between items-center flex'
+                            className='text-gray-50 text-2xl text-left w-full p-2.5 font-bold rounded-xs justify-between items-center flex'
                             style={{
                                 background: mainEvent.color,
                             }}
