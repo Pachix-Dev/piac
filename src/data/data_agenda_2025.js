@@ -523,7 +523,8 @@ export const agenda2025 = [
     id: 7,
     title:
       "Mtra. Johanna Malangré, Directora invitada en la Orquesta Sinfónica Nacional",
-    title_en: "",
+    title_en:
+      "Mtra. Johanna Malangré, Director invited in the National Sinfonietta",
     description:
       "La interpretación del programa titulado 'De la intimidad a lo épico', bajo la dirección de Johanna Malangré, incluye las siguientes obras:<ul><li>Fanny Mendelssohn-Hensel (1805–1847) – Obertura en Do mayor</li><li>Richard Wagner (1813–1883) – Idilio de Sigfrido</li><li>Antonín Dvořák (1841–1904) – Sinfonía núm. 8, op. 88 en Sol mayor </li><span className:'text-[10px] italic'>Programación sujeta a cambios.</span>",
     description_en:
