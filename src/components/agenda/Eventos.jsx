@@ -1,81 +1,100 @@
 import React, { useState } from 'react';
 import { agenda2025 } from '../../data/data_agenda_2025.js';
 
-const Eventos = (currentLanguage) => {
-    // El estado ahora guarda el ID del evento principal que está expandido
+const Eventos = ({ currentLanguage }) => {
     const [expandedMainEventId, setExpandedMainEventId] = useState(null);
-    // Nuevo estado para guardar el ID del evento individual que está expandido
     const [expandedSubEventId, setExpandedSubEventId] = useState(null);
 
-    // Función para manejar el clic en el evento principal
     const toggleMainEvent = (id) => {
         setExpandedMainEventId(expandedMainEventId === id ? null : id);
-        // Reseteamos el evento individual expandido al cerrar el principal
         setExpandedSubEventId(null);
     };
 
-    // Función para manejar el clic en el evento individual (la fecha)
     const toggleSubEvent = (id) => {
         setExpandedSubEventId(expandedSubEventId === id ? null : id);
     };
 
     return (
-        <div style={{ fontFamily: 'sans-serif', padding: '20px' }}>
-            <h1>Próximos Eventos</h1>
-            <ul style={{ listStyle: 'none', padding: 0 }}>
+        <div className="font-sans mx-auto p-4 lg:px-32"
+            data-aos="fade-up"
+            data-aos-duration="1000">
+            <p className="font-bold text-3xl md:text-6xl mb-6 text-center text-gray-800">
+                {currentLanguage === 'es' ? 'Próximos Eventos' : 'Upcoming Events'}
+            </p>
+            <p className="text-lg md:text-2xl pb-3 mb-8 text-right text-amber-300 border-b-2 border-gray-800">
+                {currentLanguage === 'es' ? 'Agenda 2025, sujeta a cambios***' : 'Agenda 2025, subject to change***'}
+            </p>
+            <ul className="list-none p-0">
                 {agenda2025.map((mainEvent) => (
-                    <li key={mainEvent.id} className="mb-1 p-3" >
+                    <li key={mainEvent.id} className="mb-6 bg-white shadow-lg rounded-xl overflow-hidden">
                         <button
                             onClick={() => toggleMainEvent(mainEvent.id)}
-                            className='text-gray-50 text-2xl text-left w-full p-2.5 font-bold rounded-xs justify-between items-center flex'
-                            style={{
-                                background: mainEvent.color,
-                            }}
+                            className="text-white text-xl md:text-2xl text-left w-full px-6 py-4 font-bold flex justify-between items-center transition-colors duration-200"
+                            style={{ background: mainEvent.color }}
                         >
-                            <span>{currentLanguage === 'es' ? mainEvent.title : mainEvent.title_en}</span>
+                            <span>
+                                {currentLanguage === 'es' ? mainEvent.title : mainEvent.title_en}
+                            </span>
                             <span>{expandedMainEventId === mainEvent.id ? '▲' : '▼'}</span>
                         </button>
 
-                        {/* Se muestra toda la agenda si el ID del evento principal coincide con el estado */}
                         {expandedMainEventId === mainEvent.id && (
-                            <div className='mt-4 p-4 bg-[#f9f9f9] rounded-xl' >
+                            <div className="p-6 transition-all duration-300 ease-in-out text-xl">
                                 {mainEvent.description && (
-                                    <div dangerouslySetInnerHTML={{ __html: currentLanguage === 'es' ? mainEvent.description : mainEvent.description_en }} style={{ marginBottom: '20px' }} />
+                                    <div
+                                        dangerouslySetInnerHTML={{ __html: currentLanguage === 'es' ? mainEvent.description : mainEvent.description_en }}
+                                        className="mb-6 text-gray-700 leading-relaxed"
+                                    />
                                 )}
 
-                                {/* Mapea por meses dentro del evento principal */}
                                 {mainEvent.agenda.map((month) => (
-                                    <div key={month.mes} style={{ marginTop: '15px' }}>
-                                        <h3 style={{ borderBottom: '2px solid #ddd', paddingBottom: '5px' }}>{month.mes}</h3>
+                                    <div key={month.mes} className="mb-8">
+                                        <h3 className="border-b-2 border-gray-200 pb-2 mb-4 text-xl md:text-2xl font-extrabold uppercase text-gray-800">
+                                            {currentLanguage === 'es' ? month.mes : month.mes_en}
+                                        </h3>
 
-                                        {/* Contenedor con CSS Grid para las 3 columnas */}
-                                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '15px' }}>
-                                            {/* Mapea los eventos individuales dentro de cada mes */}
+                                        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                                             {month.eventos.map((subEvent, index) => {
                                                 const subEventId = `${mainEvent.id}-${month.mes}-${index}`;
+                                                const isSubEventExpanded = expandedSubEventId === subEventId;
+
                                                 return (
-                                                    <div key={subEventId} style={{ padding: '10px', border: '1px solid #eee', borderRadius: '5px' }}>
+                                                    <div
+                                                        key={subEventId}
+                                                        className="p-4 border border-gray-200 rounded-lg bg-gray-50 transition-all duration-300 ease-in-out transform shadow-sm hover:shadow-lg hover:scale-105 cursor-pointer"
+                                                    >
                                                         <button
                                                             onClick={() => toggleSubEvent(subEventId)}
-                                                            style={{
-                                                                background: 'none',
-                                                                border: 'none',
-                                                                fontWeight: 'bold',
-                                                                cursor: 'pointer',
-                                                                textAlign: 'left',
-                                                                width: '100%',
-                                                                padding: 0,
-                                                                marginBottom: '5px'
-                                                            }}
+                                                            className="font-bold text-base md:text-lg text-left w-full mb-1 text-gray-800"
                                                         >
-                                                            {subEvent.fecha} - {subEvent.title}
+                                                            <span className="block font-bold text-xl ">{currentLanguage === 'es' ? subEvent.fecha : subEvent.fecha_en}</span>
+                                                            <span className="block text-md font-semibold italic" style={{ color: mainEvent.color }}>
+                                                                {currentLanguage === 'es' ? subEvent.title : subEvent.title_en}
+                                                            </span>
+                                                            {/* Lógica para mostrar "ver más" o "ver menos" */}
+                                                            <span className="block text-md font-normal italic mt-2 text-gray-500">
+                                                                {isSubEventExpanded
+                                                                    ? (currentLanguage === 'es' ? "" : "")
+                                                                    : (currentLanguage === 'es' ? "ver más..." : "see more...")
+                                                                }
+                                                            </span>
                                                         </button>
-                                                        {/* Se muestra la información detallada si este sub-evento está expandido */}
-                                                        {expandedSubEventId === subEventId && (
-                                                            <div style={{ fontSize: '0.9em', marginTop: '5px' }}>
-                                                                {subEvent.description && <p style={{ margin: '5px 0' }}>{subEvent.description}</p>}
-                                                                {subEvent.lugar && <p style={{ margin: '5px 0' }}><strong>Lugar:</strong> {subEvent.lugar}</p>}
-                                                                {subEvent.acceso && <p style={{ margin: '5px 0' }}><strong>Acceso:</strong> {subEvent.acceso}</p>}
+
+                                                        {isSubEventExpanded && (
+                                                            <div className="mt-2 text-sm text-gray-600 transition-all duration-300 ease-in-out">
+                                                                {subEvent.description && <p className="mb-1">{currentLanguage === 'es' ? subEvent.description : subEvent.description_en}</p>}
+                                                                {subEvent.lugar && <p className="mb-1 font-semibold">
+                                                                    {currentLanguage === 'es' ? 'Lugar:' : 'Location:'} {currentLanguage === 'es' ? subEvent.lugar : subEvent.lugar_en}
+                                                                </p>}
+                                                                {subEvent.acceso && <p className="font-semibold">
+                                                                    {currentLanguage === 'es' ? 'Acceso:' : 'Access:'} {currentLanguage === 'es' ? subEvent.acceso : subEvent.acceso_en}
+                                                                </p>}
+                                                                <span className="block text-md font-normal italic mt-2 text-gray-500">
+                                                                    {isSubEventExpanded
+                                                                        ? (currentLanguage === 'es' ? "ver menos..." : "see less...")
+                                                                        : (currentLanguage === 'es' ? "" : "")
+                                                                    }
+                                                                </span>
                                                             </div>
                                                         )}
                                                     </div>
@@ -89,7 +108,7 @@ const Eventos = (currentLanguage) => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </div >
     );
 };
 

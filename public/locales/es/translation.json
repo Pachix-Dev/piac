@@ -76,5 +76,13 @@
     "breadcrumb": {
         "home": "Inicio",
         "news": "Noticias"
+    },
+    "agenda": {
+        "title": "Agenda PIAC 2025",
+        "subtitle": "Eventos destacados y próximos eventos de PIAC",
+        "eventos": "Eventos",
+        "contacto": "Contacto",
+        "puesto_1": "Presidente del PIAC",
+        "puesto_2": "Directora de Relaciones Públicas"
     }
 }
