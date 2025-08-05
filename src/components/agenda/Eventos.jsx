@@ -77,32 +77,18 @@ const Eventos = ({ currentLanguage }) => {
                                                             <span className="block text-md font-semibold italic" style={{ color: mainEvent.color }}>
                                                                 {currentLanguage === 'es' ? subEvent.title : subEvent.title_en}
                                                             </span>
-                                                            {/* Lógica para mostrar "ver más" o "ver menos" */}
-                                                            <span className="block text-md font-normal italic mt-2 text-gray-500">
-                                                                {isSubEventExpanded
-                                                                    ? (currentLanguage === 'es' ? "" : "")
-                                                                    : (currentLanguage === 'es' ? "ver más..." : "see more...")
-                                                                }
-                                                            </span>
                                                         </button>
+                                                        <div className="mt-2 text-sm text-gray-600 transition-all duration-300 ease-in-out">
+                                                            {subEvent.description && <p className="mb-1">{currentLanguage === 'es' ? subEvent.description : subEvent.description_en}</p>}
+                                                            {subEvent.lugar && <p className="mb-1 font-semibold">
+                                                                {currentLanguage === 'es' ? 'Lugar:' : 'Location:'} {currentLanguage === 'es' ? subEvent.lugar : subEvent.lugar_en}
+                                                            </p>}
+                                                            {subEvent.acceso && <p className="font-semibold">
+                                                                {currentLanguage === 'es' ? 'Acceso:' : 'Access:'} {currentLanguage === 'es' ? subEvent.acceso : subEvent.acceso_en}
+                                                            </p>}
 
-                                                        {isSubEventExpanded && (
-                                                            <div className="mt-2 text-sm text-gray-600 transition-all duration-300 ease-in-out">
-                                                                {subEvent.description && <p className="mb-1">{currentLanguage === 'es' ? subEvent.description : subEvent.description_en}</p>}
-                                                                {subEvent.lugar && <p className="mb-1 font-semibold">
-                                                                    {currentLanguage === 'es' ? 'Lugar:' : 'Location:'} {currentLanguage === 'es' ? subEvent.lugar : subEvent.lugar_en}
-                                                                </p>}
-                                                                {subEvent.acceso && <p className="font-semibold">
-                                                                    {currentLanguage === 'es' ? 'Acceso:' : 'Access:'} {currentLanguage === 'es' ? subEvent.acceso : subEvent.acceso_en}
-                                                                </p>}
-                                                                <span className="block text-md font-normal italic mt-2 text-gray-500">
-                                                                    {isSubEventExpanded
-                                                                        ? (currentLanguage === 'es' ? "ver menos..." : "see less...")
-                                                                        : (currentLanguage === 'es' ? "" : "")
-                                                                    }
-                                                                </span>
-                                                            </div>
-                                                        )}
+                                                        </div>
+
                                                     </div>
                                                 );
                                             })}
