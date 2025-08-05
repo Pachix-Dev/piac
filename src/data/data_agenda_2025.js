@@ -3,12 +3,16 @@ export const agenda2025 = [
     id: 1,
     title: "24° Festival de Cine Alemán",
     title_en: "24th German Film Festival",
-    description: "",
-    description_en: "",
-    img: "",
+    description:
+      "Descripción aún no disponible, si lo necesitas puedes contactarnos en info@piac.mx",
+    description_en:
+      "Description not available yet, if you need it you can contact us at info@piac.mx",
+    img: "/img/agenda/2025/24_FCA.png",
     color: "#e6a41c",
-    beneficios: "<ul><li>Cortesías para los miembros del PIAC</li></ul>",
-    beneficios_en: "<ul><li>Courtesy to PIAC members</li></ul>",
+    beneficios:
+      "<ul class='list-disc ml-10'><li>Cortesías para los miembros del PIAC</li></ul>",
+    beneficios_en:
+      "<ul class='list-disc ml-10'><li>Courtesy to PIAC members</li></ul>",
     agenda: [
       {
         mes: "Septiembre",
@@ -210,15 +214,15 @@ export const agenda2025 = [
     title: "53° Festival Internacional Cervantino",
     title_en: "53° Cervantino International Festival",
     description:
-      "<h3>Ciclo de conciertos de la Filarmónica de Cámara Alemana de Bremen</h3>Presentación de la Filarmónica de Cámara Alemana de Bremen, en una versión reducida. El evento incluye dos conciertos y dos ensayos abiertos al público:<ul><li>El concierto inaugural del Circuito Cervantino se llevará a cabo en el Palacio de Bellas Artes de la Ciudad de México el 16 de octubre.</li><li>Se realizará un concierto en el Teatro Juárez de Guanajuato el 14 de octubre, como acto principal del Festival Internacional Cervantino.</li><li>Se llevarán a cabo dos ensayos abiertos al público: uno en Guanajuato y otro en la Ciudad de México.</li></ul>",
+      "<h3 class='font-bold italic'>Ciclo de conciertos de la Filarmónica de Cámara Alemana de Bremen</h3>Presentación de la Filarmónica de Cámara Alemana de Bremen, en una versión reducida. El evento incluye dos conciertos y dos ensayos abiertos al público:<ul class='list-disc ml-10'><li>El concierto inaugural del Circuito Cervantino se llevará a cabo en el Palacio de Bellas Artes de la Ciudad de México el 16 de octubre.</li><li>Se realizará un concierto en el Teatro Juárez de Guanajuato el 14 de octubre, como acto principal del Festival Internacional Cervantino.</li><li>Se llevarán a cabo dos ensayos abiertos al público: uno en Guanajuato y otro en la Ciudad de México.</li></ul>",
     description_en:
-      "<h3>Concert cycle of the Bremen Chamber Philharmonic</h3>Presentation of the Bremen Chamber Philharmonic, in a reduced version. The event includes two concerts and two rehearsals open to the public:<ul><li>The inaugural concert of the Cervantino Circuit will be held at the Palacio de Bellas Artes in Mexico City on October 16. </li><li>A concert will be held at the Juárez Theatre in Guanajuato on 14 October, as the main event of the Cervantino International Festival.</li><li>Two open rehearsals will take place: one in Guanajuato and the other in Mexico City.</li></ul>",
-    img: "",
+      "<h3 class='font-bold italic'>Concert cycle of the Bremen Chamber Philharmonic</h3>Presentation of the Bremen Chamber Philharmonic, in a reduced version. The event includes two concerts and two rehearsals open to the public:<ul class='list-disc ml-10'><li>The inaugural concert of the Cervantino Circuit will be held at the Palacio de Bellas Artes in Mexico City on October 16. </li><li>A concert will be held at the Juárez Theatre in Guanajuato on 14 October, as the main event of the Cervantino International Festival.</li><li>Two open rehearsals will take place: one in Guanajuato and the other in Mexico City.</li></ul>",
+    img: "/img/agenda/2025/53_FestivalCervantino.png",
     color: "#ae1d18",
     beneficios:
-      "<ul><li>Cortesías para los miembros del PIAC para cada función</li></ul>",
+      "<ul class='list-disc ml-10'><li>Cortesías para los miembros del PIAC para cada función</li></ul>",
     beneficios_en:
-      "<ul><li>Courtesy to PIAC members for each function</li></ul>",
+      "<ul class='list-disc ml-10'><li>Courtesy to PIAC members for each function</li></ul>",
     agenda: [
       {
         mes: "Octubre",
@@ -255,15 +259,15 @@ export const agenda2025 = [
     title: "Ciclo de conciertos de compositores alemanes y mexicanos",
     title_en: "Concert series by German and Mexican composers",
     description:
-      "Ciclo de conciertos bajo la curaduría del Mtro. Rodolfo Ritter. Participarán destacados artistas mexicanos, así como músicos alemanes que han sido galardonados en el Musikwettbewerb.<br><br>El ciclo culminará con un cóctel de clausura exclusivo para los miembros patrocinadores.",
+      "Ciclo de conciertos bajo la curaduría del Mtro. Rodolfo Ritter. Participarán destacados artistas mexicanos, así como músicos alemanes que han sido galardonados en el Musikwettbewerb.<br><span class='italic font-bold text-sm text-green-700'>El ciclo culminará con un cóctel de clausura exclusivo para los miembros patrocinadores.</span>",
     description_en:
-      "Concert cycle under the curatorship of Mr. Rodolfo Ritter. Featured Mexican artists, as well as German musicians who have been awarded at the Musikwettbewerb.<br><br>The cycle will culminate with an exclusive closing cocktail for sponsoring members.",
-    img: "",
+      "Concert cycle under the curatorship of Mr. Rodolfo Ritter. Featured Mexican artists, as well as German musicians who have been awarded at the Musikwettbewerb.<br><span class='italic font-bold text-sm text-green-700'>The cycle will culminate with an exclusive closing cocktail for sponsoring members.</span>",
+    img: "/img/agenda/2025/mtro-rodolfo-ritter.jpg",
     color: "#134a33",
     beneficios:
-      "<ul><li>Cortesías para los miembros del PIAC cada concierto</li><li>Invitación exclusiva para miembros del Patronato a un cóctel especial.</li></ul>",
+      "<ul class='list-disc ml-10'><li>Cortesías para los miembros del PIAC cada concierto</li><li>Invitación exclusiva para miembros del Patronato a un cóctel especial.</li></ul>",
     beneficios_en:
-      "<ul><li>Courtesy to PIAC members each concert</li><li>Exclusive invitation to Patronato members for a special cocktail.</li></ul>",
+      "<ul class='list-disc ml-10'><li>Courtesy to PIAC members each concert</li><li>Exclusive invitation to Patronato members for a special cocktail.</li></ul>",
     agenda: [
       {
         mes: "Septiembre",
@@ -345,15 +349,15 @@ export const agenda2025 = [
     title: "Danza: “CAMINHOS DAS AGUAS”",
     title_en: "Dance: “CAMINHOS DAS AGUAS”",
     description:
-      "Obra de danza contemporánea interpretada por tres bailarinas, con coreografía a cargo de la Mtra. Fernanda Costa (Berlín) y producida por el teatro berlinés Ballhaus Naunynstraße, galardonado con el Premio de Teatro Alemán 2023.<br><br>Este proyecto es resultado de una colaboración entre el Goethe-Zentrum “Berzik” en Guadalajara y el Centro Cultural Alemán en San Luis Potosí.<br><br>La puesta en escena aborda el tema del agua en todas sus formas y estados, subrayando su importancia vital. A través del movimiento corporal, la obra explora el estado líquido como símbolo de transformación constante, dando lugar a nuevas formas de expresión escénica.",
+      "Obra de danza contemporánea interpretada por tres bailarinas, con coreografía a cargo de la Mtra. Fernanda Costa (Berlín) y producida por el teatro berlinés Ballhaus Naunynstraße, galardonado con el Premio de Teatro Alemán 2023.<br><br>Este proyecto es resultado de una colaboración entre el Goethe-Zentrum “Berzik” en Guadalajara y el Centro Cultural Alemán en San Luis Potosí. La puesta en escena aborda el tema del agua en todas sus formas y estados, subrayando su importancia vital. A través del movimiento corporal, la obra explora el estado líquido como símbolo de transformación constante, dando lugar a nuevas formas de expresión escénica.",
     description_en:
-      "Work of contemporary dance performed by three dancers, with choreography by the Mtra. Fernanda Costa (Berlin) and produced by the Berlin theatre Ballhaus Naunynstraße, awarded the German Theatre Prize 2023. <br><br>This project is the result of a collaboration between the Goethe-Zentrum “Berzik” in Guadalajara and the Centro Cultural Alemán in San Luis Potosí.<br><br>La puesta en escena aborda el tema del agua en todas sus formas y estados, subrayando su vital importancia. Through body movement, the work explores the liquid state as a symbol of constant transformation, giving rise to new forms of scenic expression.",
-    img: "",
+      "Work of contemporary dance performed by three dancers, with choreography by the Mtra. Fernanda Costa (Berlin) and produced by the Berlin theatre Ballhaus Naunynstraße, awarded the German Theatre Prize 2023. <br><br>This project is the result of a collaboration between the Goethe-Zentrum “Berzik” in Guadalajara and the Centro Cultural Alemán in San Luis Potosí. The scene is about the water in all its forms and states, emphasizing its vital importance. Through body movement, the work explores the liquid state as a symbol of constant transformation, giving rise to new forms of scenic expression.",
+    img: "/img/agenda/2025/Caminhos-das-Aguas.jpg",
     color: "#e6a41c",
     beneficios:
-      "<ul><li>Cortesías para los miembros del PIAC para cada función</li></ul>",
+      "<ul class='list-disc ml-10'><li>Cortesías para los miembros del PIAC para cada función</li></ul>",
     beneficios_en:
-      "<ul><li>Courtesy to PIAC members for each function</li></ul>",
+      "<ul class='list-disc ml-10'><li>Courtesy to PIAC members for each function</li></ul>",
     agenda: [
       {
         mes: "Octubre",
@@ -404,10 +408,12 @@ export const agenda2025 = [
       "Gira en México del conjunto musical “Deutsches Kammerorchester Berlin”, originario de Alemania, compuesto por 12 músicos.",
     description_en:
       "Tour in Mexico of the musical ensemble “Deutsches Kammerorchester Berlin”, originally from Germany, composed by 12 musicians.",
-    img: "",
+    img: "/img/agenda/2025/OrquestaCamaraAlemanaBerlin.png",
     color: "#ae1d18",
-    beneficios: "<ul><li>Cortesías para los miembros del PIAC</li></ul>",
-    beneficios_en: "<ul><li>Courtesy to PIAC members</li></ul>",
+    beneficios:
+      "<ul class='list-disc ml-10'><li>Cortesías para los miembros del PIAC</li></ul>",
+    beneficios_en:
+      "<ul class='list-disc ml-10'><li>Courtesy to PIAC members</li></ul>",
     agenda: [
       {
         mes: "Noviembre",
@@ -468,15 +474,15 @@ export const agenda2025 = [
     title_en:
       "Urban music concerts and workshops with young people from PASCH schools",
     description:
-      "Programa de actividades centrado en la música urbana en alemán, dirigido a jóvenes estudiantes y docentes de alemán como lengua extranjera.<br><br><ol><li> Participación de dos artistas alemanes del grupo Jahfro, Jan Kitlar y Kero, junto con la artista mexicana Santos Woge, quienes poseen vínculos artísticos y culturales con Alemania. El objetivo es ofrecer un taller de creación lírica en alemán dirigido a los estudiantes de la Escuela Nacional Preparatoria de la Universidad Nacional Autónoma de México, como parte de la iniciativa PASCH – “Schulen: Partner der Zukunft”.</li><li>Taller dirigido a docentes de alemán, enfocado en la utilización de la música y la lírica como recursos didácticos. Se definirá la audiencia para este taller, pudiendo estar destinado a docentes de colegios PASCH o abierto al público del Goethe-Institut.</li><li>Incluirá dos conciertos en alemán con acceso gratuito</li></ol>",
+      "Programa de actividades centrado en la música urbana en alemán, dirigido a jóvenes estudiantes y docentes de alemán como lengua extranjera.<br><br><ol class='list-decimal ml-10'><li> Participación de dos artistas alemanes del grupo Jahfro, Jan Kitlar y Kero, junto con la artista mexicana Santos Woge, quienes poseen vínculos artísticos y culturales con Alemania. El objetivo es ofrecer un taller de creación lírica en alemán dirigido a los estudiantes de la Escuela Nacional Preparatoria de la Universidad Nacional Autónoma de México, como parte de la iniciativa PASCH – “Schulen: Partner der Zukunft”.</li><li>Taller dirigido a docentes de alemán, enfocado en la utilización de la música y la lírica como recursos didácticos. Se definirá la audiencia para este taller, pudiendo estar destinado a docentes de colegios PASCH o abierto al público del Goethe-Institut.</li><li>Incluirá dos conciertos en alemán con acceso gratuito</li></ol>",
     description_en:
-      "Programme of activities focusing on urban music in German, aimed at young students and teachers of German as a foreign language. <br><br><ol><li> Participation of two German artists from the Jahfro group, Jan Kitlar and Kero, together with the Mexican artist Santos Woge, who have artistic and cultural ties to Germany. The objective is to offer a lyric creation workshop in German aimed at students of the National Preparatory School of the National Autonomous University of Mexico, as part of the PASCH initiative - “Schulen: Partner der Zukunft”. </li><li>Workshop for German teachers, focusing on the use of music and lyrics as teaching resources. The audience for this workshop will be defined, it may be aimed at teachers from PASCH schools or open to the public of the Goethe-Institut.</li><li>It will include two concerts in German with free access</li></ol>",
-    img: "",
+      "Programme of activities focusing on urban music in German, aimed at young students and teachers of German as a foreign language. <br><br><ol class='list-decimal ml-10'><li> Participation of two German artists from the Jahfro group, Jan Kitlar and Kero, together with the Mexican artist Santos Woge, who have artistic and cultural ties to Germany. The objective is to offer a lyric creation workshop in German aimed at students of the National Preparatory School of the National Autonomous University of Mexico, as part of the PASCH initiative - “Schulen: Partner der Zukunft”. </li><li>Workshop for German teachers, focusing on the use of music and lyrics as teaching resources. The audience for this workshop will be defined, it may be aimed at teachers from PASCH schools or open to the public of the Goethe-Institut.</li><li>It will include two concerts in German with free access</li></ol>",
+    img: "/img/agenda/2025/colegioPASCH.jpg",
     color: "#134a33",
     beneficios:
-      "<ul><li>Invitación especial para los miembros del PIAC al evento inaugural. </li><li>Invitación especial a miembros del PIAC en el concierto a celebrarse en el Goethe-Institut Mexiko.</li></ul>",
+      "<ul class='list-disc ml-10'><li>Invitación especial para los miembros del PIAC al evento inaugural. </li><li>Invitación especial a miembros del PIAC en el concierto a celebrarse en el Goethe-Institut Mexiko.</li></ul>",
     beneficios_en:
-      "<ul><li>Special invitation to PIAC members at the inaugural event. </li><li>Special invitation to PIAC members at the concert to be held at the Goethe-Institut Mexico.</li></ul>",
+      "<ul class='list-disc ml-10'><li>Special invitation to PIAC members at the inaugural event. </li><li>Special invitation to PIAC members at the concert to be held at the Goethe-Institut Mexico.</li></ul>",
     agenda: [
       {
         mes: "Noviembre",
@@ -526,15 +532,15 @@ export const agenda2025 = [
     title_en:
       "Mtra. Johanna Malangré, Director invited in the National Sinfonietta",
     description:
-      "La interpretación del programa titulado 'De la intimidad a lo épico', bajo la dirección de Johanna Malangré, incluye las siguientes obras:<ul><li>Fanny Mendelssohn-Hensel (1805–1847) – Obertura en Do mayor</li><li>Richard Wagner (1813–1883) – Idilio de Sigfrido</li><li>Antonín Dvořák (1841–1904) – Sinfonía núm. 8, op. 88 en Sol mayor </li><span className:'text-[10px] italic'>Programación sujeta a cambios.</span>",
+      "La interpretación del programa titulado 'De la intimidad a lo épico', bajo la dirección de Johanna Malangré, incluye las siguientes obras:<ul class='list-disc ml-10'><li>Fanny Mendelssohn-Hensel (1805–1847) – Obertura en Do mayor</li><li>Richard Wagner (1813–1883) – Idilio de Sigfrido</li><li>Antonín Dvořák (1841–1904) – Sinfonía núm. 8, op. 88 en Sol mayor </li><span class='text-sm font-bold italic'>Programación sujeta a cambios.</span>",
     description_en:
-      "The programme entitled 'From intimacy to epic', under the direction of Johanna Malangré, includes the following works:<ul><li>Fanny Mendelssohn-Hensel (1805-1847) - Overture in C major</li><li>Richard Wagner (1813-1883) - Idilio de Sigfrido</li><li>Antonín Dvořák (1841-1904) - Symphony no. 8, op. 88 in G major </li><span className:'text-[10px] italic'>Programming subject to change.</span>",
-    img: "",
+      "The programme entitled 'From intimacy to epic', under the direction of Johanna Malangré, includes the following works:<ul class='list-disc ml-10'><li>Fanny Mendelssohn-Hensel (1805-1847) - Overture in C major</li><li>Richard Wagner (1813-1883) - Idilio de Sigfrido</li><li>Antonín Dvořák (1841-1904) - Symphony no. 8, op. 88 in G major </li><span class='text-sm font-bold italic'>Programming subject to change.</span>",
+    img: "/img/agenda/2025/mtra_johanna_malangre.webp",
     color: "#e6a41c",
     beneficios:
-      "<ul><li>Cortesías para miembros del PIAC para ambos conciertos</li><li>Oportunidad de conocer a la maestra Johanna Malangré durante uno de los ensayos</li><li>Visita exclusiva por la Sala Principal de el Palacio de Bellas Artes</li></ul>",
+      "<ul class='list-disc ml-10'><li>Cortesías para miembros del PIAC para ambos conciertos</li><li>Oportunidad de conocer a la maestra Johanna Malangré durante uno de los ensayos</li><li>Visita exclusiva por la Sala Principal de el Palacio de Bellas Artes</li></ul>",
     beneficios_en:
-      "<ul><li>Courtesy to PIAC members for both concerts</li><li>Opportunity to meet the maestra Johanna Malangré during one of the rehearsals</li><li>Visit exclusively by the main room of the Palacio de Bellas Artes</li></ul>",
+      "<ul class='list-disc ml-10'><li>Courtesy to PIAC members for both concerts</li><li>Opportunity to meet the maestra Johanna Malangré during one of the rehearsals</li><li>Visit exclusively by the main room of the Palacio de Bellas Artes</li></ul>",
     agenda: [
       {
         mes: "Noviembre",
@@ -574,12 +580,12 @@ export const agenda2025 = [
       "Mercado navideño inspirado en la tradición alemana, que incorpora elementos de la cultura mexicana y se realiza en colaboración con organizaciones locales. <br><br>Contará con una variada oferta gastronómica que incluirá platillos típicos navideños tanto de Alemania como de México, además de mezcal, ponche y Glühwein (vino caliente especiado).",
     description_en:
       "Christmas market inspired by the German tradition, which incorporates elements of Mexican culture and is carried out in collaboration with local organizations. <br><br>You will have a varied gastronomic offer that includes typical Christmas dishes from both Germany and Mexico, as well as mezcal, punch and Glühwein (spiced mulled wine).",
-    img: "",
+    img: "/img/agenda/2025/WEIHNACHTSMARKT.webp",
     color: "#ae1d18",
     beneficios:
-      "<ul><li>Cortesías para disfrutar de cerveza alemana gratis o un Glühwein</li></ul>",
+      "<ul class='list-disc ml-10'><li>Cortesías para disfrutar de cerveza alemana gratis o un Glühwein</li></ul>",
     beneficios_en:
-      "<ul><li>Courtesy to enjoy German beer for free or a Glühwein</li></ul>",
+      "<ul class='list-disc ml-10'><li>Courtesy to enjoy German beer for free or a Glühwein</li></ul>",
     agenda: [
       {
         mes: "Diciembre",

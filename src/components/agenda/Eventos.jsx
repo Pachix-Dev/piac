@@ -41,10 +41,16 @@ const Eventos = ({ currentLanguage }) => {
                         {expandedMainEventId === mainEvent.id && (
                             <div className="p-6 transition-all duration-300 ease-in-out text-xl">
                                 {mainEvent.description && (
-                                    <div
-                                        dangerouslySetInnerHTML={{ __html: currentLanguage === 'es' ? mainEvent.description : mainEvent.description_en }}
-                                        className="mb-6 text-gray-700 leading-relaxed"
-                                    />
+                                    <div className="flex flex-row gap-10">
+
+                                        <div
+                                            dangerouslySetInnerHTML={{ __html: currentLanguage === 'es' ? mainEvent.description : mainEvent.description_en }}
+                                            className="mb-6 text-gray-700 leading-relaxed w-2/3 text-justify"
+                                        />
+                                        <div className='w-1/3'>
+                                            {mainEvent.img && <img src={mainEvent.img} alt="" className="w-full h-full" />}
+                                        </div>
+                                    </div>
                                 )}
 
                                 {mainEvent.agenda.map((month) => (
@@ -103,6 +109,14 @@ const Eventos = ({ currentLanguage }) => {
                                         </div>
                                     </div>
                                 ))}
+                                <div>
+                                    <h3 class="uppercase font-bold text-2xl pt-4 border-t-2 border-gray-200" >{currentLanguage === 'es' ? 'Beneficios para el PIAC:' : 'Benefits for PIAC   :'}</h3>
+                                    <p
+                                        dangerouslySetInnerHTML={{ __html: currentLanguage === 'es' ? mainEvent.beneficios : mainEvent.beneficios_en }}
+                                        className="leading-relaxed italic"
+                                        style={{ color: mainEvent.color }}
+                                    />
+                                </div>
                             </div>
                         )}
                     </li>
