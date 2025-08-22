@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { agenda2025 } from '../../data/data_agenda_2025.js'
 
 const Eventos = ({ currentLanguage }) => {
