@@ -27,7 +27,7 @@ export const agenda2025 = [
             acceso: "Participación del PIAC",
             acceso_en: "PIAC's participation ",
           },
-          {
+          /*{
             fecha: "Martes 16",
             fecha_en: "Tuesday 16",
             title: "Proyección especial colaboradores",
@@ -35,9 +35,9 @@ export const agenda2025 = [
             description: "Función como adelanto del festival",
             description_en: "Function as advancement of the festival",
             lugar: "Cinemex Platino CDMX, ubicación por confirmar",
-            acceso: "Aceso exclusivo para miembros del PIAC",
+            acceso: " exclusivo para miembros del PIAC",
             acceso_en: "Exclusive access for PIAC members",
-          },
+          },*/
           {
             fecha: "Miércoles 17",
             fecha_en: "Wendesday 17",
@@ -68,7 +68,7 @@ export const agenda2025 = [
             title: "Coctel VIP Pre-Inauguración 24. Festival de Cine Alemán",
             title_en: "VIP Cocktail Pre-Inauguration 24th German Film Festival",
             lugar: "Foyer del Teatro de la Ciudad Esperanza Iris",
-            acceso: "Acceso exclusivo para miembros del PIAC",
+            acceso: "exclusivo para miembros del PIAC",
             acceso_en: "Exclusive access for PIAC members",
           },
           {
@@ -77,7 +77,7 @@ export const agenda2025 = [
             title: "Inauguración 24. Festival de Cine Alemán",
             title_en: " Inauguration 24th German Film Festival",
             lugar: "Teatro de la Ciudad Esperanza Iris",
-            acceso: "Acceso exclusivo para miembros del PIAC",
+            acceso: "exclusivo para miembros del PIAC",
             acceso_en: "Exclusive access for PIAC members",
           },
           {
@@ -86,7 +86,7 @@ export const agenda2025 = [
             title: "Cocktail de inauguración 24. Festival de Cine Alemán",
             title_en: "Inauguration Cocktail 24th German Film Festival",
             lugar: "Museo Franz Mayer",
-            acceso: "Acceso exclusivo para miembros del PIAC",
+            acceso: "exclusivo para miembros del PIAC",
             acceso_en: "Exclusive access for PIAC members",
           },
           {
@@ -94,9 +94,18 @@ export const agenda2025 = [
             fecha_en: "Wednesday 24",
             title: "Taller de Dirección de Fotografía por Tim Kuhn patrocinado por Zeiss",
             title_en: "Cinematography Workshop by Tim Kuhn sponsored by Zeiss",
-            lugar: "Distrito 7 Clavel 157, Atlampa, Cuauhtémoc, 06450 Ciudad de México, CDMX",
-            acceso: "",
-            acceso_en: "",
+            lugar: "Distrito 7. Clavel 157, Atlampa, Cuauhtémoc, 06450 Ciudad de México",
+            acceso: "Taller cerrado",
+            acceso_en: "Closed workshop",
+          },
+          {
+            fecha: "Miércoles 24",
+            fecha_en: "Wednesday 24",
+            title: "“Júpiter: secretos detrás de cámaras” Proyección de la película JÚPITER seguida de conversatorio entre el director Benjamin Pfohl y el director de fotografía Tim Kuhn.",
+            title_en: "“Júpiter: secrets behind the scenes” Screening of the film JÚPITER followed by a conversation between director Benjamin Pfohl and cinematographer Tim Kuhn.",
+            lugar: "Goethe-Institut Mexiko",
+            acceso: "Entrada Libre. Cupo limitado. ",
+            acceso_en: "Free Entry. Limited capacity.",
           },
           {
             fecha: "Jueves 25",
@@ -106,7 +115,7 @@ export const agenda2025 = [
             description: "Premier de película que se proyecta un único día",
             description_en: "Movie premiere of a single day",
             lugar: "Cinemex Manacar",
-            acceso: "Acceso exclusivo para miembros del PIAC",
+            acceso: "exclusivo para miembros del PIAC",
             acceso_en: "Exclusive access for PIAC members",
           },
           {
@@ -120,7 +129,7 @@ export const agenda2025 = [
             acceso: "",
             acceso_en: "",
           },
-          {
+          /*{
             fecha: "Sábado 27",
             fecha_en: "Saturday 27",
             title: "Premiación 24° Festival de cine alemán y celebración con Música y micheladas ",
@@ -130,7 +139,7 @@ export const agenda2025 = [
             lugar: "Goethe-Institut Mexiko",
             acceso: "",
             acceso_en: "",
-          },          
+          },*/          
           {
             fecha: "Lunes 29",
             fecha_en: "Monday 29",
@@ -139,7 +148,7 @@ export const agenda2025 = [
             description: "",
             description_en: "",
             lugar: "Trajineras en Xochimilco",
-            acceso: "Acceso exclusivo para miembros del PIAC",
+            acceso: "exclusivo para miembros del PIAC",
             acceso_en: "PIAC members exclusive access",
           },
           {
@@ -252,7 +261,8 @@ export const agenda2025 = [
     description_en:
       "🎼When music becomes a language, there is no clearer expression, nor more shared emotion. <br /><br />Thus, today from the Patronage of the German Industry for Culture (PIAC) we are pleased to extend our warmest welcome to this Concert Cycle, which will not only unfold notes and harmonies in each movement, captivating those who let themselves be carried away by the emotion of the beat; but also constitutes an invitation to inhabit a space where tradition meets sound art to weave the invisible threads between two great nations: Mexico and Germany.<br /><br /> Under the curatorship of Maestro Rodolfo Ritter, the repertoire embraces works by composers from both nations, and brings together on stage renowned Mexican performers and young awardees of the Musikwettbewerb prize from Germany, whose artistic sensitivity and virtuosity represent the best of a generation committed to music and passion. <br /><br />Let us celebrate this expression of cultural brotherhood together.",
     img: "/img/agenda/2025/portadakmdmf.webp",
-    color: "#E6A41C",
+    color: "#134a33",
+    file: "/files/program_KMDMF.pdf",    
     beneficios:
       "<ul class='list-disc ml-10'><li>Cortesías para los miembros del PIAC para cada función</li></ul>",
     beneficios_en:
@@ -282,7 +292,7 @@ export const agenda2025 = [
           {
             fecha: "Jueves 30",
             fecha_en: "Thursday 30",
-            title: "Adrián Justus, Violín y Roge Rritter, Piano",
+            title: "Adrián Justus, Violín y Roger Rritter, Piano",
             title_en: "Adrián Justus, Violin and Roge Rritter, Piano",
             description: "",
             description_en: "",
@@ -299,7 +309,7 @@ export const agenda2025 = [
           {
             fecha: "Jueves 6",
             fecha_en: "Thursday 6",
-            title: "CUARTETO DE CUERDAS DE BELLAS ARTES Félix Alanís, viola, Carlos Quijano, violín Ilya Ivanov, violín, Manuel Cruz, violonchelo",
+            title: "CUARTETO DE CUERDAS DE BELLAS ARTES <br/>Félix Alanís, viola; Carlos Quijano, violín; Ilya Ivanov, violín; Manuel Cruz, violonchelo",
             title_en: "CUARTETO DE CUERDAS DE BELLAS ARTES Félix Alanís, viola, Carlos Quijano, violín Ilya Ivanov, violín, Manuel Cruz, violonchelo",
             description: "",
             description_en: "",
@@ -310,11 +320,33 @@ export const agenda2025 = [
           {
             fecha: "Jueves 27",
             fecha_en: "Thursday 27",
-            title: "Anouchka hack, Violonchelo (ganadora del cocurso deustscher musikwettbewerb) / ** Painista acompañante por confirmar**",
+            title: "Anouchka hack, Violonchelo (ganadora del concurso deustscher musikwettbewerb) / ** Pianista acompañante por confirmar**",
             title_en: "Anouchka hack, Cello (winner of the Deutscher Musikwettbewerb) / **Accompanying pianist to be confirmed**",
             description: "",
             description_en: "",
             lugar: "Goethe-Institut Mexiko",
+            acceso: "",
+            acceso_en: "",
+          },
+          {
+            fecha: "Viernes 28",
+            fecha_en: "Friday 28",
+            title: "Concierto clausura",
+            title_en: "Closing concert",
+            description: "",
+            description_en: "",
+            lugar: "Goethe-Institut Mexiko",
+            acceso: "",
+            acceso_en: "",
+          },
+          {
+            fecha: "Viernes 28",
+            fecha_en: "Friday 28",
+            title: "Cocktail de cierre",
+            title_en: "Closing cocktail",
+            description: "",
+            description_en: "",
+            lugar: "Palacio de Bellas Artes, CDMX",
             acceso: "",
             acceso_en: "",
           },
@@ -323,7 +355,7 @@ export const agenda2025 = [
     ],
   },
   
-  {
+  /*{
     id: 3,
     title: "Ciclo de conciertos de compositores alemanes y mexicanos",
     title_en: "Concert series by German and Mexican composers",
@@ -412,7 +444,8 @@ export const agenda2025 = [
         ],
       },
     ],
-  },
+  },*/
+
   {
     id: 4,
     title: "Danza: “CAMINHOS DAS AGUAS”",

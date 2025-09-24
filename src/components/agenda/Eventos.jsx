@@ -39,7 +39,7 @@ const Eventos = ({ currentLanguage }) => {
               className='text-white text-xl md:text-2xl text-left w-full px-6 py-4 font-bold flex justify-between items-center transition-colors duration-200'
               style={{ background: mainEvent.color }}
             >
-              <span>
+              <span className='uppercase'>
                 {currentLanguage === 'es'
                   ? mainEvent.title
                   : mainEvent.title_en}
@@ -51,15 +51,43 @@ const Eventos = ({ currentLanguage }) => {
               <div className='p-6 transition-all duration-300 ease-in-out text-xl'>
                 {mainEvent.description && (
                   <div className='flex flex-row gap-10'>
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html:
-                          currentLanguage === 'es'
-                            ? mainEvent.description
-                            : mainEvent.description_en,
-                      }}
-                      className='mb-6 text-gray-700 leading-relaxed w-2/3 text-justify'
-                    />
+                    <div className='mb-6 text-gray-700 leading-relaxed w-2/3 text-justify'>
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html:
+                            currentLanguage === 'es'
+                              ? mainEvent.description
+                              : mainEvent.description_en,
+                        }}
+                      />
+                      {mainEvent.file && (
+                        <a
+                          href='/files/program_KMDMF.pdf'
+                          target='_blank'
+                          className='text-white font-bold flex items-center mt-4 gap-2 w-fit px-4 py-2 rounded hover:scale-105 transition-transform'
+                          style={{
+                            textDecoration: 'underline',
+                            background: '#134A33',
+                          }}
+                        >
+                          <svg
+                            xmlns='http://www.w3.org/2000/svg'
+                            fill='none'
+                            viewBox='0 0 24 24'
+                            strokeWidth={1.5}
+                            stroke='currentColor'
+                            className='size-6'
+                          >
+                            <path
+                              strokeLinecap='round'
+                              strokeLinejoin='round'
+                              d='M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m.75 12 3 3m0 0 3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z'
+                            />
+                          </svg>
+                          KMDMF.pdf
+                        </a>
+                      )}
+                    </div>
                     <div className='w-1/3'>
                       {mainEvent.img && (
                         <img
@@ -98,14 +126,16 @@ const Eventos = ({ currentLanguage }) => {
                                   ? subEvent.fecha
                                   : subEvent.fecha_en}
                               </span>
-                              <span
-                                className='block text-md font-semibold italic'
+                              <p
+                                className='block text-md font-semibold italic uppercase'
                                 style={{ color: mainEvent.color }}
-                              >
-                                {currentLanguage === 'es'
-                                  ? subEvent.title
-                                  : subEvent.title_en}
-                              </span>
+                                dangerouslySetInnerHTML={{
+                                  __html:
+                                    currentLanguage === 'es'
+                                      ? subEvent.title
+                                      : subEvent.title_en,
+                                }}
+                              />
                             </button>
                             <div className='mt-2 text-sm text-gray-600 transition-all duration-300 ease-in-out'>
                               {subEvent.description && (
