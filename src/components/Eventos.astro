@@ -1,23 +1,36 @@
 ---
-import EmblaCarousel from "./Carousel/EmblaCarousel";
-import { eventos } from "../data/data_eventos.js";
-import i18next, { t } from "i18next";
+import EmblaCarousel from './Carousel/EmblaCarousel'
+import { eventos } from '../data/data_eventos.js'
+import { agenda2025 } from '../data/data_agenda_2025'
 
-const OPTIONS = { loop: true };
-const SLIDES_DATA = eventos;
-const currentLanguage = i18next.language;
+import i18next, { t } from 'i18next'
+
+const OPTIONS = { loop: true }
+const SLIDES_DATA = agenda2025
+const currentLanguage = i18next.language
 ---
 
-<div class="bg-[#f9f7f0] p-1">
-    <div class="rounded-3xl p-4 bg-white m-5"
-    data-aos="zoom-in-right"
-    data-aos-duration="1000"
+<div class='bg-[#f9f7f0] p-1'>
+  <div
+    class='rounded-3xl p-4 bg-white m-5'
+    data-aos='zoom-in-right'
+    data-aos-duration='1000'
+  >
+    <h2 class='border-b-3 border-b-red-500 w-fit font-bold text-4xl text-blond'>
+      {t('events.title')}
+    </h2>
+  </div>
+  <EmblaCarousel
+    client:only='react'
+    slides={SLIDES_DATA}
+    options={OPTIONS}
+    currentLanguage={currentLanguage}
+  />
+  <div class='w-full flex justify-center mt-5'>
+    <a
+      class='bg-[#006626] text-white py-2 px-7 rounded-lg hover:bg-[#0A422F]'
+      href=`${i18next.language === "en" ? "/en/agenda-piac-2025/" : "/agenda-piac-2025/"}`
+      >{t('button_more')}</a
     >
-        <h2
-            class="border-b-3 border-b-red-500 w-fit font-bold text-4xl text-blond"
-        >
-            {t("events.title")}
-        </h2>
-    </div>
-    <EmblaCarousel client:only="react" slides={SLIDES_DATA} options={OPTIONS} currentLanguage={currentLanguage} />
+  </div>
 </div>

@@ -1,5 +1,51 @@
 export const eventos = [
   {
+    title: "Inauguración 23 FCA Festival de Cine Alemán",
+    title_en: "Inauguration 23th FCA Festival of German Film 2024",
+    data: "Esta película icónica que marcó a toda una generación, que se convirtió en un filme de culto y nos enseñó una Alemania moderna, colorida, apasionada y potente, cumple 25 años de haber sido estrenada en México y lo celebramos proyectando una versión restaurada en 4K",
+    data_en:
+      "This filmic masterpiece that marked a whole generation, which turned into a cult film and taught us a modern, colored, passionate and powerful Germany, fulfilled 25 years of being broadcast in Mexico and we are proud to present a restored version in 4K",
+    img: "/img/recuerdos/2024/23FCA.webp",
+    year: "2024",
+  },
+  {
+    title: "La Excursión de las niñas muertas 2024",
+    title_en: "La Excursión de las niñas muertas 2024",
+    data: "La narradora de esta pieza escénica, Netty Radvanyi, bisnieta de Anna Seghers, y quienes forman parte del proyecto realizarán un recorrido por los espacios de una casa antigua de la colonia Santa María la Ribera para transitar por las huellas de la memoria y el destino.",
+    data_en:
+      "The narrator of this epic piece, Netty Radvanyi, great-grandaughter of Anna Seghers, and who form part of the project will take a tour of the spaces of an old house in the colony of Santa María la Ribera to travel through the traces of memory and destiny.",
+    img: "/img/recuerdos/2024/LaExcursionNinasMuertas.webp",
+    year: "2024",
+  },
+  {
+    title: "Liber Festival 2024",
+    title_en: "Liber Festival 2024",
+    data: "La Novena Sinfonía de Ludwig van Beethoven es un monumento musical que simboliza la libertad y el espíritu de confraternidad entre los seres humanos.",
+    data_en:
+      "The Novena Sinfonía of Ludwig van Beethoven is a musical monument that symbolizes freedom and spirit of collaboration between human beings.",
+    img: "/img/recuerdos/2024/LiberFestival.webp",
+    year: "2024",
+  },
+  
+  {
+    title: "EXT x VNION + BOCA BOCA 2024",
+    title_en: "EXT x VNION + BOCA BOCA 2024",
+    data: "Un universo de sonidos, visuales y texturas impactantes. Con un line-up de alto nivel y la participación especial de Lena Willikens, una DJ reconocida por su habilidad para explorar lo más oscuro y misterioso de la música electrónica",
+    data_en:
+      "An universe of sound, visual and texture impacting. With a line-up of high level and the participation of Lena Willikens, a DJ recognized for her ability to explore the most dark and mysterious of the electronic music",
+    img: "/img/recuerdos/2024/EXT-x-VNION-BOCA-BOCA.webp",
+    year: "2024",
+  },
+  {
+    title: "La naturaleza íntima de Ernst Saemisch 2024",
+    title_en: "The naturalness of Ernst Saemisch 2024",
+    data: "El Colegio de San Ildefonso abre sus puertas a la exposición “La naturaleza íntima de la vida”, donde el color y el movimiento dialogan en cada trazo. Una oportunidad para disfrutar del arte europeo en uno de los recintos más emblemáticos de la Ciudad de México.",
+    data_en:
+      "The San Ildefonso College opens its doors to the exhibition “The Naturalness of Life”, where color and movement converse in each stroke. An opportunity to enjoy the European art in one of the most iconic rooms of the City of Mexico.",
+    img: "/img/recuerdos/2024/naturaleza-piac-scaled.webp",
+    year: "2024",
+  },
+  {
     title: "VII TAXCO FILM FEST 2022",
     title_en: "VII TAXCO FILM FEST 2022",
     data: "Evento con la selección final de cortometrajes en las categorías de ficción, documental, animación y experimental.",
@@ -89,49 +135,5 @@ export const eventos = [
     img: "/img/recuerdos/2023/Hertz-Flimmern.webp",
     year: "2023",
   },
-  {
-    title: "La Excursión de las niñas muertas 2024",
-    title_en: "La Excursión de las niñas muertas 2024",
-    data: "La narradora de esta pieza escénica, Netty Radvanyi, bisnieta de Anna Seghers, y quienes forman parte del proyecto realizarán un recorrido por los espacios de una casa antigua de la colonia Santa María la Ribera para transitar por las huellas de la memoria y el destino.",
-    data_en:
-      "The narrator of this epic piece, Netty Radvanyi, great-grandaughter of Anna Seghers, and who form part of the project will take a tour of the spaces of an old house in the colony of Santa María la Ribera to travel through the traces of memory and destiny.",
-    img: "/img/recuerdos/2024/LaExcursionNinasMuertas.webp",
-    year: "2024",
-  },
-  {
-    title: "Liber Festival 2024",
-    title_en: "Liber Festival 2024",
-    data: "La Novena Sinfonía de Ludwig van Beethoven es un monumento musical que simboliza la libertad y el espíritu de confraternidad entre los seres humanos.",
-    data_en:
-      "The Novena Sinfonía of Ludwig van Beethoven is a musical monument that symbolizes freedom and spirit of collaboration between human beings.",
-    img: "/img/recuerdos/2024/LiberFestival.webp",
-    year: "2024",
-  },
-  {
-    title: "Inauguración 23 FCA Festival de Cine Alemán",
-    title_en: "Inauguration 23th FCA Festival of German Film 2024",
-    data: "Esta película icónica que marcó a toda una generación, que se convirtió en un filme de culto y nos enseñó una Alemania moderna, colorida, apasionada y potente, cumple 25 años de haber sido estrenada en México y lo celebramos proyectando una versión restaurada en 4K",
-    data_en:
-      "This filmic masterpiece that marked a whole generation, which turned into a cult film and taught us a modern, colored, passionate and powerful Germany, fulfilled 25 years of being broadcast in Mexico and we are proud to present a restored version in 4K",
-    img: "/img/recuerdos/2024/23FCA.webp",
-    year: "2024",
-  },
-  {
-    title: "EXT x VNION + BOCA BOCA 2024",
-    title_en: "EXT x VNION + BOCA BOCA 2024",
-    data: "Un universo de sonidos, visuales y texturas impactantes. Con un line-up de alto nivel y la participación especial de Lena Willikens, una DJ reconocida por su habilidad para explorar lo más oscuro y misterioso de la música electrónica",
-    data_en:
-      "An universe of sound, visual and texture impacting. With a line-up of high level and the participation of Lena Willikens, a DJ recognized for her ability to explore the most dark and mysterious of the electronic music",
-    img: "/img/recuerdos/2024/EXT-x-VNION-BOCA-BOCA.webp",
-    year: "2024",
-  },
-  {
-    title: "La naturaleza íntima de Ernst Saemisch 2024",
-    title_en: "The naturalness of Ernst Saemisch 2024",
-    data: "El Colegio de San Ildefonso abre sus puertas a la exposición “La naturaleza íntima de la vida”, donde el color y el movimiento dialogan en cada trazo. Una oportunidad para disfrutar del arte europeo en uno de los recintos más emblemáticos de la Ciudad de México.",
-    data_en:
-      "The San Ildefonso College opens its doors to the exhibition “The Naturalness of Life”, where color and movement converse in each stroke. An opportunity to enjoy the European art in one of the most iconic rooms of the City of Mexico.",
-    img: "/img/recuerdos/2024/naturaleza-piac-scaled.webp",
-    year: "2024",
-  },
+  
 ];
