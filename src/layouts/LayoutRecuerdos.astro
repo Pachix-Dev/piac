@@ -22,6 +22,18 @@ import '../styles/global.css'
       crossorigin='anonymous'
       referrerpolicy='no-referrer'
     />
+    <!-- Google tag (gtag.js) -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=G-1FLKHE6G2B'
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-1FLKHE6G2B')
+    </script>
     <title>
       {t('home.title')}
     </title>
