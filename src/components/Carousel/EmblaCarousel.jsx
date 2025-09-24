@@ -8,7 +8,7 @@ const EmblaCarousel = (props) => {
   ])
   return (
     <div className='flex mx-auto relative overflow-hidden'>
-      <div className=' overflow-hidden cursor-pointer' ref={emblaRef}>
+      <div className=' overflow-hidden' ref={emblaRef}>
         {/* Contenedor de los slides */}
         <div className='flex md:h-96 lg:flex -ml-4'>
           {slides.map((recuerdo, index) => (
