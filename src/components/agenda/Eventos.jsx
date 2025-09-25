@@ -15,11 +15,7 @@ const Eventos = ({ currentLanguage }) => {
   }
 
   return (
-    <div
-      className='font-sans mx-auto p-4 lg:px-32'
-      data-aos='fade-up'
-      data-aos-duration='1000'
-    >
+    <div className='font-sans mx-auto p-4 lg:px-32'>
       <p className='font-bold text-3xl md:text-6xl mb-6 text-center text-gray-800'>
         {currentLanguage === 'es' ? 'Próximos Eventos' : 'Upcoming Events'}
       </p>
@@ -50,8 +46,8 @@ const Eventos = ({ currentLanguage }) => {
             {expandedMainEventId === mainEvent.id && (
               <div className='p-6 transition-all duration-300 ease-in-out text-xl'>
                 {mainEvent.description && (
-                  <div className='flex flex-row gap-10'>
-                    <div className='mb-6 text-gray-700 leading-relaxed w-2/3 text-justify'>
+                  <div className='grind md:flex flex-row gap-10'>
+                    <div className='mb-6 text-gray-700 leading-relaxed md:w-2/3 text-justify'>
                       <div
                         dangerouslySetInnerHTML={{
                           __html:
@@ -88,7 +84,7 @@ const Eventos = ({ currentLanguage }) => {
                         </a>
                       )}
                     </div>
-                    <div className='w-1/3'>
+                    <div className='md:w-1/3'>
                       {mainEvent.img && (
                         <img
                           src={mainEvent.img}

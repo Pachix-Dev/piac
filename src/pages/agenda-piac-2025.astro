@@ -7,29 +7,28 @@ import Eventos from "../components/agenda/Eventos.jsx";
 
 changeLanguage("es");
 
-const translates = { returnObjects: true };
 const currentLanguage = i18next.language;
 ---
 
 <Layout>
-    <div class="grid justify-items-center container mx-auto px-4 md:px-8">
-        <p
-            class="text-3xl md:text-6xl font-extrabold text-gray-800"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-        >
-            {t("agenda.title")}
-        </p>
-        <img
-            src="/img/icon_PIAC.webp"
-            alt=""
-            class="w-max my-6"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="1000"
-        />
-    </div>
-    <Eventos currentLanguage={currentLanguage} client:only="react" />
-    <Members />
-    <Contacto />
+  <div class='grid justify-items-center container mx-auto px-4 md:px-8'>
+    <p
+      class='text-3xl md:text-6xl font-extrabold text-gray-800'
+      data-aos='fade-up'
+      data-aos-duration='1000'
+    >
+      {t('agenda.title')}
+    </p>
+    <img
+      src='/img/icon_PIAC.webp'
+      alt=''
+      class='w-max my-6'
+      data-aos='fade-up'
+      data-aos-delay='300'
+      data-aos-duration='1000'
+    />
+  </div>
+  <Eventos currentLanguage={currentLanguage} client:only='react' />
+  <Members />
+  <Contacto />
 </Layout>
