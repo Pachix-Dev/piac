@@ -1,31 +1,249 @@
 ---
-import { t } from 'i18next'
+import i18next, { t } from 'i18next'
 ---
 
-<section class='container mx-auto px-4 py-10'>
-  <p class='text-4xl text-black font-bold text-center'>
-    {t('home.testimonial')}
-  </p>
+<section class='bg-gradient-to-br from-gray-50 to-white py-20'>
+  <div class='container mx-auto px-4'>
+    <!-- Header Section -->
+    <div class='text-center mb-16' data-aos='fade-up' data-aos-duration='800'>
+      <h2
+        class='text-4xl md:text-5xl font-bold text-gray-800 mb-4 relative inline-block'
+      >
+        {t('home.testimonial')}
+        <div
+          class='absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-green-500 to-green-700 rounded-full mt-2'
+        >
+        </div>
+      </h2>
+      <p class='text-lg text-gray-600 max-w-2xl mx-auto mt-6'>
+        {
+          i18next.language === 'es'
+            ? 'Descubre lo que nuestros participantes y socios tienen que decir sobre nuestros eventos culturales'
+            : 'Discover what our participants and partners have to say about our cultural events'
+        }
+      </p>
+    </div>
 
-  <div class='mt-10 flex flex-wrap justify-center items-center gap-10'>
-    <lite-youtube
-      videoid='b5yqaP3pjxI'
-      posterquality='maxresdefault'
-      params='controls=0&enablejsapi=1'
-      class='rounded-2xl h-96 w-60'></lite-youtube>
-    <lite-youtube
-      videoid='hu8PyByExcI'
-      posterquality='maxresdefault'
-      params='controls=0&enablejsapi=1'
-      class='rounded-2xl h-96 w-60'></lite-youtube>
-    <lite-youtube
-      videoid='SfctGr6nbmU'
-      posterquality='maxresdefault'
-      params='controls=0&enablejsapi=1'
-      class='rounded-2xl h-96 w-60'></lite-youtube>
+    <!-- YouTube Videos Section -->
+    <div
+      class='mb-16'
+      data-aos='fade-up'
+      data-aos-duration='800'
+      data-aos-delay='200'
+    >
+      <div class='flex flex-wrap justify-center items-center gap-6 lg:gap-8'>
+        <div
+          class='group'
+          data-aos='zoom-in'
+          data-aos-duration='600'
+          data-aos-delay='100'
+        >
+          <lite-youtube
+            videoid='b5yqaP3pjxI'
+            posterquality='maxresdefault'
+            params='controls=1&enablejsapi=1'
+            class='rounded-2xl h-80 w-72 md:h-96 md:w-80 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2'
+          >
+          </lite-youtube>
+        </div>
+        <div
+          class='group'
+          data-aos='zoom-in'
+          data-aos-duration='600'
+          data-aos-delay='200'
+        >
+          <lite-youtube
+            videoid='hu8PyByExcI'
+            posterquality='maxresdefault'
+            params='controls=1&enablejsapi=1'
+            class='rounded-2xl h-80 w-72 md:h-96 md:w-80 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2'
+          >
+          </lite-youtube>
+        </div>
+        <div
+          class='group'
+          data-aos='zoom-in'
+          data-aos-duration='600'
+          data-aos-delay='300'
+        >
+          <lite-youtube
+            videoid='SfctGr6nbmU'
+            posterquality='maxresdefault'
+            params='controls=1&enablejsapi=1'
+            class='rounded-2xl h-80 w-72 md:h-96 md:w-80 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2'
+          >
+          </lite-youtube>
+        </div>
+      </div>
+    </div>
+
+    <!-- Instagram Posts Section -->
+    <div data-aos='fade-up' data-aos-duration='800' data-aos-delay='400'>
+      <div
+        class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto'
+      >
+        <!-- Instagram Post 1 -->
+        <div
+          class='instagram-container group'
+          data-aos='fade-up'
+          data-aos-duration='600'
+          data-aos-delay='100'
+        >
+          <div
+            class='bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2'
+          >
+            <blockquote
+              class='instagram-media'
+              data-instgrm-permalink='https://www.instagram.com/p/DN6JUNeEkLb/?utm_source=ig_embed&utm_campaign=loading'
+              data-instgrm-version='14'
+              style='background:#FFF; border:0; border-radius:12px; box-shadow:none; margin:0; max-width:100%; min-width:280px; padding:0; width:100%;'
+            >
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Instagram Post 2 -->
+        <div
+          class='instagram-container group'
+          data-aos='fade-up'
+          data-aos-duration='600'
+          data-aos-delay='200'
+        >
+          <div
+            class='bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2'
+          >
+            <blockquote
+              class='instagram-media'
+              data-instgrm-permalink='https://www.instagram.com/p/DOeyQEPFDFi/?utm_source=ig_embed&utm_campaign=loading'
+              data-instgrm-version='14'
+              style='background:#FFF; border:0; border-radius:12px; box-shadow:none; margin:0; max-width:100%; min-width:280px; padding:0; width:100%;'
+            >
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Instagram Post 3 -->
+        <div
+          class='instagram-container group'
+          data-aos='fade-up'
+          data-aos-duration='600'
+          data-aos-delay='300'
+        >
+          <div
+            class='bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2'
+          >
+            <blockquote
+              class='instagram-media'
+              data-instgrm-permalink='https://www.instagram.com/p/DL2lTm0M62c/?utm_source=ig_embed&utm_campaign=loading'
+              data-instgrm-version='14'
+              style='background:#FFF; border:0; border-radius:12px; box-shadow:none; margin:0; max-width:100%; min-width:280px; padding:0; width:100%;'
+            >
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <script>
   import '@justinribeiro/lite-youtube'
 </script>
+
+<script is:inline>
+  // Cargar el script de Instagram con manejo de errores
+  function loadInstagramEmbed() {
+    if (!window.instgrm) {
+      const script = document.createElement('script')
+      script.src = 'https://www.instagram.com/embed.js'
+      script.async = true
+      script.onload = () => {
+        if (window.instgrm) {
+          window.instgrm.Embeds.process()
+        }
+      }
+      script.onerror = () => {
+        console.warn('No se pudo cargar Instagram embeds')
+      }
+      document.body.appendChild(script)
+    } else {
+      window.instgrm.Embeds.process()
+    }
+  }
+
+  // Ejecutar cuando el DOM esté listo
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadInstagramEmbed)
+  } else {
+    loadInstagramEmbed()
+  }
+
+  // Reprocessar embeds cuando sea necesario
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      if (window.instgrm) {
+        window.instgrm.Embeds.process()
+      }
+    }, 1000)
+  })
+</script>
+
+<style>
+  /* Estilos personalizados para lite-youtube */
+  lite-youtube {
+    --lite-youtube-brand-color: #22c55e;
+  }
+
+  /* Mejorar la apariencia de Instagram embeds */
+  .instagram-container {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .instagram-media {
+    border-radius: 12px !important;
+    overflow: hidden;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .instagram-container {
+      min-height: 350px;
+    }
+  }
+
+  /* Loading animation for Instagram posts */
+  .instagram-container:not(.loaded) {
+    position: relative;
+  }
+
+  .instagram-container:not(.loaded)::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #22c55e;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+  /* Hover effects */
+  .group:hover lite-youtube {
+    transform: translateY(-8px) scale(1.02);
+  }
+</style>

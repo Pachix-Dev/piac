@@ -1,44 +1,49 @@
 ---
-import { partners } from "../data/data_partners.js";
-import i18next from "i18next";
+import { partners } from '../data/data_partners.js'
+import i18next from 'i18next'
 
-const currentLanguage = i18next.language;
+const currentLanguage = i18next.language
 ---
 
-<section class="relative p-10 z-10">
-  <div class="absolute inset-0">
+<section class='mt-20 relative p-10 z-10'>
+  <div class='absolute inset-0'>
     <img
-      src="/img/bg-aliados.webp"
-      alt="Imagen de los aliados"
-      class="w-full h-full object-cover filter blur-sm"
-      loading="lazy"
-      width=""
-      height=""
+      src='/img/bg-aliados.webp'
+      alt='Imagen de los aliados'
+      class='w-full h-full object-cover filter blur-sm'
+      loading='lazy'
+      width=''
+      height=''
     />
   </div>
-  <div class="relative z-10">
-      {
-        partners.map((partnert) => (
-          <div data-aos="fade-up" data-aos-duration="3000">
-            <div class="w-full justify-center flex">
-              <h2 class="text-center text-white border-b-4 border-amber-400 w-fit font-bold text-5xl italic mb-10 mt-10">
-                {currentLanguage === "es" ? partnert.title : partnert.title_en}
-              </h2>
-            </div>
-            <div class="grid grid-cols-[repeat(auto-fit,_minmax(150px,_max-content))] justify-center gap-10  pt-10 pb-10">
-              {partnert.items.map((item) => (
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="bg-white grid place-items-center p-4 rounded-2xl"
-                >
-                  <img src={item.img} alt={item.name} width={item.width} height={item.height} />
-                </a>
-              ))}
-            </div>
+  <div class='relative z-10'>
+    {
+      partners.map((partnert) => (
+        <div data-aos='fade-up' data-aos-duration='3000'>
+          <div class='w-full justify-center flex'>
+            <h2 class='text-center text-white border-b-4 border-amber-400 w-fit font-bold text-5xl italic mb-10 mt-10'>
+              {currentLanguage === 'es' ? partnert.title : partnert.title_en}
+            </h2>
           </div>
-        ))
-      }
+          <div class='grid grid-cols-[repeat(auto-fit,_minmax(150px,_max-content))] justify-center gap-10  pt-10 pb-10'>
+            {partnert.items.map((item) => (
+              <a
+                href={item.link}
+                target='_blank'
+                rel='noopener noreferrer'
+                class='bg-white grid place-items-center p-4 rounded-2xl'
+              >
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  width={item.width}
+                  height={item.height}
+                />
+              </a>
+            ))}
+          </div>
+        </div>
+      ))
+    }
   </div>
 </section>
