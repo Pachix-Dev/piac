@@ -589,4 +589,158 @@ export const recuerdos = [
     img: "/img/recuerdos/2024/naturaleza-piac-scaled.webp",
     year: "2024",
   },
-];
+  {
+    id: 61,
+    title: "Interrito Rialidades",
+    title_en: "Interrito Rialidades",
+    subtitle:
+      "Amanda Bodadilla - Galería Luis Nishizawa - Exposición multidisciplinaria",
+    subtitle_en:
+      "Amanda Bodadilla - Luis Nishizawa Gallery - Multidisciplinary Exhibition",
+    img: "/img/recuerdos/2025/recuerdos2025_1.jpg",
+    year: "2025",
+  },
+  {
+    id: 62,
+    title: "Festival de cine Alemán",
+    title_en: "German Film Festival",
+    subtitle:
+      "",
+    subtitle_en:
+      "",
+    img: "/img/recuerdos/2025/recuerdos2025_3.jpg",
+    year: "2025",
+  },
+  {
+    id: 63,
+    title: "The Deutsche Kammerphilharmonie Bremen",
+    title_en: "The Deutsche Kammerphilharmonie Bremen",
+    subtitle:
+      "Ricaardo Minasi, director - James Ehnes, violín ",
+    subtitle_en:
+      "Ricaardo Minasi, conductor - James Ehnes, violin ",
+    img: "/img/recuerdos/2025/recuerdos2025_4.jpeg",
+    year: "2025",
+  },
+  {
+    id: 64,
+    title: "De la intimidad a lo épico",
+    title_en: "From Intimacy to the Epic",
+    subtitle:
+      "",
+    subtitle_en:
+      "",
+    img: "/img/recuerdos/2025/recuerdos2025_5.png",
+    year: "2025",
+  },
+  {
+    id: 65,
+    title: "Orquesta de Cámara Alemana de Berlín",
+    title_en: "German Chamber Orchestra of Berlin",
+    subtitle:
+      "",
+    subtitle_en:
+      "",
+    img: "/img/recuerdos/2025/recuerdos2025_6.png",
+    year: "2025",
+  },
+  {
+    id: 66,
+    title: "Orquesta de Cámara Alemana de Berlín",
+    title_en: "German Chamber Orchestra of Berlin",
+    subtitle:
+      "",
+    subtitle_en:
+      "",
+    img: "/img/recuerdos/2025/recuerdos2025_7.jpeg",
+    year: "2025",
+  },
+  {
+    id: 67,
+    title: "Orquesta de Cámara Alemana de Berlín",
+    title_en: "German Chamber Orchestra of Berlin",
+    subtitle:
+      "",
+    subtitle_en:
+      "",
+    img: "/img/recuerdos/2025/recuerdos2025_8.jpeg",
+    year: "2025",
+  },
+  {
+    id: 68,
+    title: "Santos Woge & Jahfro",
+    title_en: "Santos Woge & Jahfro",
+    subtitle:
+      "",
+    subtitle_en:
+      "",
+    img: "/img/recuerdos/2025/recuerdos2025_9.webp",
+    year: "2025",
+  },
+  {
+    id: 69,
+    title: "KAMMER MEX - DEUTSCHE MUSIKFEST",
+    title_en: "KAMMER MEX - DEUTSCHE MUSIKFEST",
+    subtitle:
+      "",
+    subtitle_en:
+      "",
+    img: "/img/recuerdos/2025/KMDMF_1.jpg",
+    year: "2025",
+  },
+  {
+    id: 70,
+    title: "KAMMER MEX - DEUTSCHE MUSIKFEST",
+    title_en: "KAMMER MEX - DEUTSCHE MUSIKFEST",
+    subtitle:
+      "",
+    subtitle_en:
+      "",
+    img: "/img/recuerdos/2025/KMDMF_2.jpg",
+    year: "2025",
+  },
+  {
+    id: 71,
+    title: "KAMMER MEX - DEUTSCHE MUSIKFEST",
+    title_en: "KAMMER MEX - DEUTSCHE MUSIKFEST",
+    subtitle:
+      "",
+    subtitle_en:
+      "",
+    img: "/img/recuerdos/2025/KMDMF_3.jpg",
+    year: "2025",
+  },
+  {
+    id: 72,
+    title: "KAMMER MEX - DEUTSCHE MUSIKFEST",
+    title_en: "KAMMER MEX - DEUTSCHE MUSIKFEST",
+    subtitle:
+      "",
+    subtitle_en:
+      "",
+    img: "/img/recuerdos/2025/KMDMF_4.jpg",
+    year: "2025",
+  },
+  {
+    id: 73,
+    title: "KAMMER MEX - DEUTSCHE MUSIKFEST",
+    title_en: "KAMMER MEX - DEUTSCHE MUSIKFEST",
+    subtitle:
+      "",
+    subtitle_en:
+      "",
+    img: "/img/recuerdos/2025/KMDMF_5.jpg",
+    year: "2025",
+  },
+  {
+    id: 74,
+    title: "KAMMER MEX - DEUTSCHE MUSIKFEST",
+    title_en: "KAMMER MEX - DEUTSCHE MUSIKFEST",
+    subtitle:
+      "",
+    subtitle_en:
+      "",
+    img: "/img/recuerdos/2025/KMDMF_6.jpg",
+    year: "2025",
+  },
+].sort((a, b) => b.id - a.id);;
